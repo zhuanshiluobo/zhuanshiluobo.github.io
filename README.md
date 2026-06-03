@@ -1,4 +1,4 @@
-# 转石萝卜的博客
+# zhuanshiluobo的博客
 
 基于 Vue 3 + Vite 构建的个人博客。入口为https://zhuanshiluobo.github.io/
 
