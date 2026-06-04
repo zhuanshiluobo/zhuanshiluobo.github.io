@@ -9,7 +9,7 @@ const socialLinks = [
   },
   {
     name: 'Bilibili',
-    url: 'https://space.bilibili.com/',
+    url: 'https://space.bilibili.com/436984901?spm_id_from=333.1007.0.0',
     icon: 'bilibili'
   }
 ]
