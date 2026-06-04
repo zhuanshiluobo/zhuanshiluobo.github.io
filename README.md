@@ -72,9 +72,9 @@ npm run build
 3. 构建产物通过 `actions/upload-pages-artifact` 上传
 4. `actions/deploy-pages` 部署到 `zhuanshiluobo.github.io`
 
-## 添加文章
+## 发布文章
 
-在 `src/data/posts.js` 中添加新条目：
+编辑 `src/data/posts.js`，在数组中添加新条目：
 
 ```js
 {
@@ -92,4 +92,10 @@ npm run build
 }
 ```
 
-保存后提交推送，Actions 会自动更新线上内容。
+保存后推送：
+
+```sh
+git add . && git commit -m "新增文章：文章标题" && git push
+```
+
+推送后 GitHub Actions 自动构建部署，稍等片刻即可在 [zhuanshiluobo.github.io](https://zhuanshiluobo.github.io/) 看到新文章。
