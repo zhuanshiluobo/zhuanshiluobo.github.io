@@ -8,7 +8,7 @@ import BlogHeader from './components/BlogHeader.vue'
     <router-view />
   </main>
   <footer class="site-footer">
-    <p>&copy; 2026 转石萝卜的博客. Powered by Vue 3 + Vite.</p>
+    <p>&copy; 2026 zhuanshiluobo的博客. Powered by Vue 3 + Vite.</p>
   </footer>
 </template>
 
