@@ -21,9 +21,6 @@ concurrency:
 
 jobs:
   import:
-    if: >-
-      github.event_name == 'workflow_dispatch' ||
-      contains(github.event.issue.labels.*.name, 'blog-post')
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -76,7 +73,7 @@ jobs:
         with:
           branch: master
           commit_message: "Import blog post from issue #${{ steps.issue.outputs.number }}"
-          file_pattern: src/data/posts.js
+          file_pattern: src/data/posts.js docs
 
       - uses: actions/upload-pages-artifact@v3
         with:
