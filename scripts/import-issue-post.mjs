@@ -83,13 +83,13 @@ function stripMetadata(body) {
 
 function parseTags(value) {
   if (!value) {
-    return ['Blog']
+    return []
   }
 
   return value
     .split(/,|\uFF0C/)
     .map((tag) => tag.trim())
-    .filter(Boolean)
+    .filter((tag) => tag && tag.toLowerCase() !== 'blog')
 }
 
 function firstPlainLine(body) {

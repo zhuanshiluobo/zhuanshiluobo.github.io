@@ -2,6 +2,7 @@
 import { posts } from '../data/posts.js'
 
 const sortedPosts = [...posts].sort((a, b) => new Date(b.date) - new Date(a.date))
+const visibleTags = (post) => (post.tags || []).filter(tag => tag.toLowerCase() !== 'blog')
 </script>
 
 <template>
@@ -14,8 +15,8 @@ const sortedPosts = [...posts].sort((a, b) => new Date(b.date) - new Date(a.date
       </router-link>
       <div class="post-meta">
         <time>{{ post.date }}</time>
-        <span class="tags">
-          <span v-for="tag in post.tags" :key="tag" class="tag">{{ tag }}</span>
+        <span v-if="visibleTags(post).length" class="tags">
+          <span v-for="tag in visibleTags(post)" :key="tag" class="tag">{{ tag }}</span>
         </span>
       </div>
       <p class="post-summary">{{ post.summary }}</p>

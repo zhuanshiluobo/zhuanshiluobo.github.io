@@ -7,6 +7,7 @@ const route = useRoute()
 const router = useRouter()
 
 const post = computed(() => posts.find(p => p.id === Number(route.params.id)))
+const visibleTags = computed(() => (post.value?.tags || []).filter(tag => tag.toLowerCase() !== 'blog'))
 
 if (!post.value) {
   router.replace('/')
@@ -20,8 +21,8 @@ if (!post.value) {
       <h1>{{ post.title }}</h1>
       <div class="post-meta">
         <time>{{ post.date }}</time>
-        <span class="tags">
-          <span v-for="tag in post.tags" :key="tag" class="tag">{{ tag }}</span>
+        <span v-if="visibleTags.length" class="tags">
+          <span v-for="tag in visibleTags" :key="tag" class="tag">{{ tag }}</span>
         </span>
       </div>
       <div class="post-content" v-html="post.content"></div>
