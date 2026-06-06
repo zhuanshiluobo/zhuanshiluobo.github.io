@@ -42,5 +42,15 @@ export const posts = [
     summary: "test",
     content: "<p>test</p>",
     tags: ["Blog"]
+  },
+  {
+    id: 6,
+    issueNumber: 9,
+    source: "https://github.com/zhuanshiluobo/zhuanshiluobo.github.io/issues/9",
+    title: "测试非选择有tag能否提交",
+    date: "2026-06-06",
+    summary: "依旧测试",
+    content: "<p>依旧测试</p>",
+    tags: ["Blog"]
   }
 ]
