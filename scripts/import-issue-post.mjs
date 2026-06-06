@@ -58,11 +58,19 @@ function parseMetadata(body) {
 
   for (; index < lines.length; index += 1) {
     const line = lines[index]
-    const match = /^([a-zA-Z][\w-]*):\s*(.*)$/.exec(line)
+    const match = /^([a-zA-Z][\w-]*|摘要|标签|标题|日期)\s*[:：]\s*(.*)$/.exec(line)
     if (!match) {
       break
     }
-    result[match[1].toLowerCase()] = match[2].trim()
+
+    const key = {
+      摘要: 'summary',
+      标签: 'tags',
+      标题: 'title',
+      日期: 'date'
+    }[match[1]] || match[1].toLowerCase()
+
+    result[key] = match[2].trim()
   }
 
   result.content = lines.slice(index).join('\n').trim()

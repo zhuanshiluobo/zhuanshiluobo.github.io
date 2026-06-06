@@ -12,6 +12,8 @@ on:
 permissions:
   contents: write
   issues: write
+  pages: write
+  id-token: write
 
 concurrency:
   group: import-issue-post
@@ -23,6 +25,9 @@ jobs:
       github.event_name == 'workflow_dispatch' ||
       contains(github.event.issue.labels.*.name, 'blog-post')
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -66,11 +71,19 @@ jobs:
       - run: npm run build
 
       - name: Commit post
+        id: commit
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           branch: master
           commit_message: "Import blog post from issue #${{ steps.issue.outputs.number }}"
           file_pattern: src/data/posts.js
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+      - id: deployment
+        uses: actions/deploy-pages@v4
 
       - name: Comment result
         if: github.event_name != 'workflow_dispatch'
@@ -81,5 +94,5 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: context.payload.issue.number,
-              body: 'Imported this issue as a blog post. The Pages deploy workflow will publish it after the commit lands.'
+              body: 'Imported this issue as a blog post and deployed the site: ${{ steps.deployment.outputs.page_url }}'
             })
