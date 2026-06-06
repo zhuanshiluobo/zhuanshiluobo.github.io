@@ -32,35 +32,5 @@ export const posts = [
     summary: "摘要：首页显示简短摘要。",
     content: "<p>摘要：首页显示简短摘要。 标签：博客</p>\n<p>请在这里写正文。</p>\n<p>支持的Markdown：</p>\n<p># 一级标题 #5 到别的链接</p>\n<ul><li>段落</li><li><code>行内代码</code></li><li><strong>加粗文字</strong></li><li>*斜体文字*</li><li>~~删除线~~</li><li>项目列表</li><li>代码块</li><li>&gt;引用</li><li>---</li><li>分割线</li></ul>",
     tags: ["Blog"]
-  },
-  {
-    id: 5,
-    issueNumber: 8,
-    source: "https://github.com/zhuanshiluobo/zhuanshiluobo.github.io/issues/8",
-    title: "测试tag能否提交",
-    date: "2026-06-06",
-    summary: "test",
-    content: "<p>test</p>",
-    tags: ["Blog"]
-  },
-  {
-    id: 6,
-    issueNumber: 9,
-    source: "https://github.com/zhuanshiluobo/zhuanshiluobo.github.io/issues/9",
-    title: "测试非选择有tag能否提交",
-    date: "2026-06-06",
-    summary: "依旧测试",
-    content: "<p>依旧测试</p>",
-    tags: ["Blog"]
-  },
-  {
-    id: 7,
-    issueNumber: 10,
-    source: "https://github.com/zhuanshiluobo/zhuanshiluobo.github.io/issues/10",
-    title: "新的测试tag提交",
-    date: "2026-06-06",
-    summary: "依旧测试",
-    content: "<p>依旧测试</p>",
-    tags: ["Blog"]
   }
 ]
