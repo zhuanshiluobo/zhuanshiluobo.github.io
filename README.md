@@ -1,56 +1,46 @@
-# 转石萝卜的博客
+# zhuanshiluobo 的博客
 
-基于 Vue 3 + Vite 构建的个人技术博客。
+这是一个基于 Vue 3 + Vite 构建的个人技术博客。
 
-入口：[zhuanshiluobo.github.io](https://zhuanshiluobo.github.io/)
+线上地址：[https://zhuanshiluobo.github.io/](https://zhuanshiluobo.github.io/)
 
-## 功能
+## 使用方法
 
-- 文章列表首页，按日期倒序排列
-- 文章详情页，支持 HTML 富文本渲染
-- 标签分类
-- 响应式布局，适配移动端
-- Hash 路由模式，兼容 GitHub Pages
+### 1. 发布文章
 
-## 技术栈
+文章数据保存在 `src/data/posts.js`。你可以直接在这个文件里新增文章，也可以通过 GitHub Issue 导入文章。
 
-- Vue 3 (Composition API)
-- Vue Router 4 (Hash 模式)
-- Vite 8
+Issue 正文建议使用下面的格式：
 
-## 项目结构
+````md
+标题：文章标题
+日期：2026-06-07
+摘要：文章摘要，展示在首页列表中
+标签：Vue, 前端
 
+这里开始写正文内容。
+
+正文支持常见 Markdown 写法，例如：
+
+## 二级标题
+
+- 列表项
+- 另一个列表项
+
+```js
+console.log('hello')
 ```
-zhuanshiluobo_blog/
-├── public/              静态资源（构建时直接复制到输出目录）
-├── src/
-│   ├── assets/          CSS 样式
-│   │   ├── base.css     颜色变量与基础重置
-│   │   └── main.css     全局布局样式
-│   ├── components/      公共组件
-│   │   └── BlogHeader.vue  顶部导航栏
-│   ├── data/            数据
-│   │   └── posts.js     博客文章数据
-│   ├── router/          路由
-│   │   └── index.js     Hash 路由配置
-│   ├── views/           页面
-│   │   ├── Home.vue     首页（文章列表）
-│   │   └── Post.vue     文章详情页
-│   ├── App.vue          根组件
-│   └── main.js          入口文件
-├── index.html            HTML 模板
-├── vite.config.js        Vite 配置
-└── .github/workflows/    GitHub Actions 自动部署
-```
+````
 
-## 本地开发
+说明：
 
-```sh
-npm install
-npm run dev
-```
+- `标题`、`日期`、`摘要`、`标签` 是可选元数据
+- 如果不写 `标题`，会默认使用 Issue 标题
+- 如果不写 `日期`，会默认使用当天日期
+- 如果不写 `摘要`，会从正文第一段提取
+- `标签` 支持逗号分隔，例如 `Vue, 前端`
 
-浏览器访问 `http://localhost:5173`。
+提交 Issue 后，仓库里的自动化流程会读取内容、更新文章数据并重新部署站点。
 
 ## 构建与部署
 
@@ -60,42 +50,59 @@ npm run dev
 npm run build
 ```
 
-构建产物输出到 `docs/` 目录。
+构建产物会输出到 `docs/` 目录。
 
 ### 部署
 
-推送代码到 `master` 分支后，GitHub Actions 自动构建并部署到 GitHub Pages。无需手动操作。
+仓库配置了 GitHub Actions，向 `master` 分支推送代码后会自动执行：
 
-部署流程：
-1. 推送代码 → 触发 Actions 工作流
-2. Actions 执行 `npm ci && npm run build`
-3. 构建产物通过 `actions/upload-pages-artifact` 上传
-4. `actions/deploy-pages` 部署到 `zhuanshiluobo.github.io`
+1. 安装依赖
+2. 执行 `npm run build`
+3. 将 `docs/` 作为 GitHub Pages 产物上传
+4. 自动部署到站点
 
-## 发布文章
+如果你是直接改文章内容，通常只需要提交并推送到 `master` 即可。
 
-编辑 `src/data/posts.js`，在数组中添加新条目：
+## 项目结构
+
+```text
+zhuanshiluobo_blog/
+├── public/              静态资源
+├── src/
+│   ├── assets/          CSS 样式
+│   ├── components/      公共组件
+│   ├── data/            文章数据
+│   ├── router/          路由配置
+│   └── views/           页面
+├── scripts/             文章导入脚本
+├── docs/                构建产物
+└── .github/workflows/   GitHub Actions 自动部署
+```
+
+## 技术栈
+
+- Vue 3
+- Vue Router 4
+- Vite 8
+
+## 文章数据示例
+
+如果你想手动新增文章，可以在 `src/data/posts.js` 中添加一条记录。字段建议保持下面这些：
 
 ```js
 {
   id: 6,
   title: '文章标题',
-  date: '2026-06-04',
-  summary: '文章摘要，显示在首页列表中。',
+  date: '2026-06-07',
+  summary: '文章摘要，显示在首页列表中',
   content: `
     <p>文章正文，支持 HTML 标签。</p>
     <h2>二级标题</h2>
-    <p>段落内容...</p>
+    <p>更多内容...</p>
     <pre><code>代码块</code></pre>
   `,
   tags: ['标签1', '标签2']
 }
 ```
 
-保存后推送：
-
-```sh
-git add . && git commit -m "新增文章：文章标题" && git push
-```
-
-推送后 GitHub Actions 自动构建部署，稍等片刻即可在 [zhuanshiluobo.github.io](https://zhuanshiluobo.github.io/) 看到新文章。
+保存后提交到 `master` 分支，GitHub Pages 会自动更新。
