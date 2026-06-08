@@ -106,3 +106,5 @@ zhuanshiluobo_blog/
 ```
 
 保存后提交到 `master` 分支，GitHub Pages 会自动更新。
+
+本系统由 AI 辅助开发。
