@@ -32,5 +32,24 @@ export const posts = [
     summary: "摘要：首页显示简短摘要。",
     content: "<p>摘要：首页显示简短摘要。 标签：博客</p>\n<p>请在这里写正文。</p>\n<p>支持的Markdown：</p>\n<p># 一级标题 #5 到别的链接</p>\n<ul><li>段落</li><li><code>行内代码</code></li><li><strong>加粗文字</strong></li><li>*斜体文字*</li><li>~~删除线~~</li><li>项目列表</li><li>代码块</li><li>&gt;引用</li><li>---</li><li>分割线</li></ul>",
     tags: ["Blog"]
+  },
+  {
+    id: 5,
+    title: "守望先锋：占点分析",
+    date: "2026-08-21",
+    summary: "守望先锋占点分析，提供完整 Word 文档下载。",
+    content: `
+      <p>本文的完整内容整理在 Word 文档中，可通过下方按钮下载原始文件。</p>
+      <div class="download-card">
+        <strong>守望先锋-占点分析.docx</strong>
+        <span>Word 文档 · 约 177 KB</span>
+        <a
+          class="download-link"
+          href="/downloads/overwatch-point-capture-analysis.docx"
+          download="守望先锋-占点分析.docx"
+        >下载完整文档</a>
+      </div>
+    `,
+    tags: ["守望先锋", "游戏分析"]
   }
 ]

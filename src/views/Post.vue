@@ -132,4 +132,36 @@ h1 {
   border-radius: 3px;
   border: 1px solid var(--color-border);
 }
+
+.post-content :deep(.download-card) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.55rem;
+  margin: 1.25rem 0;
+  padding: 1.1rem;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background: var(--color-background-soft);
+}
+
+.post-content :deep(.download-card span) {
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+.post-content :deep(.download-link) {
+  display: inline-block;
+  margin-top: 0.25rem;
+  padding: 0.55rem 0.9rem;
+  border-radius: 6px;
+  color: white;
+  background: hsla(160, 100%, 37%, 1);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.post-content :deep(.download-link:hover) {
+  opacity: 0.85;
+}
 </style>
