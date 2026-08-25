@@ -75,5 +75,33 @@ export const posts = [
       </div>
     `,
     tags: ["游城拓荒", "游戏开发", "版本策划"]
+  },
+  {
+    id: 7,
+    title: "守望先锋系统拆解案",
+    date: "2026-08-25",
+    summary: "拆解《守望先锋》的系统框架、目标玩法与竞技规则，并评析英雄协作、成长商业化及整体体验的优缺点。",
+    content: `
+      <p>本次系统拆解整理为 Excel 分析文档与 XMind 系统框架图，两份原始文件可在下方完整下载。</p>
+      <div class="download-card">
+        <strong>守望先锋系统拆解案.xlsx</strong>
+        <span>原始 Excel 文档 · 约 1.95 MB</span>
+        <a
+          class="download-link"
+          href="/downloads/overwatch-system-breakdown.xlsx"
+          download="守望先锋系统拆解案.xlsx"
+        >下载完整文档</a>
+      </div>
+      <div class="download-card">
+        <strong>守望先锋系统框架.xmind</strong>
+        <span>原始 XMind 文档 · 约 320 KB</span>
+        <a
+          class="download-link"
+          href="/downloads/overwatch-system-framework.xmind"
+          download="守望先锋系统框架.xmind"
+        >下载完整文档</a>
+      </div>
+    `,
+    tags: ["守望先锋", "游戏分析"]
   }
 ]

@@ -63,4 +63,40 @@ git revert <commit>     # 撤销某次提交</code></pre>
           download="守望先锋-占点分析.docx"
         >下载完整文档</a>
       </div>
+    `,tags:[`守望先锋`,`游戏分析`]},{id:6,title:`《游城拓荒：铸基者》v0.4.0-alpha 版本更新策划案`,date:`2026-08-21`,summary:`围绕 3D 棋盘与地图导航、底部角色手牌、资源计数板和对局界面布局展开的 v0.4.0-alpha 发布策划。`,content:`
+      <p>本文整理《游城拓荒：铸基者》v0.4.0-alpha 版本更新策划案。该版本以“更好观察、更快确认、更少打断”为体验方向，不新增基础规则。</p>
+      <p><strong>前置版本：</strong>v0.3.0-alpha<br>
+      <strong>版本状态：</strong>待合并开发内容的发布策划<br>
+      <strong>策划范围：</strong>3D 棋盘与地图导航、底部角色手牌、资源计数板、设置与显示、对局界面布局优化<br>
+      <strong>文档日期：</strong>2026 年 8 月 20 日</p>
+
+      <div class="download-card">
+        <strong>0.4.0-alpha更新策划案.docx</strong>
+        <span>原始 Word 文档 · 约 31 KB</span>
+        <a
+          class="download-link"
+          href="/downloads/you-cheng-tuo-huang-v0.4.0-alpha-plan.docx"
+          download="0.4.0-alpha更新策划案.docx"
+        >下载完整文档</a>
+      </div>
+    `,tags:[`游城拓荒`,`游戏开发`,`版本策划`]},{id:7,title:`守望先锋系统拆解案`,date:`2026-08-25`,summary:`拆解《守望先锋》的系统框架、目标玩法与竞技规则，并评析英雄协作、成长商业化及整体体验的优缺点。`,content:`
+      <p>本次系统拆解整理为 Excel 分析文档与 XMind 系统框架图，两份原始文件可在下方完整下载。</p>
+      <div class="download-card">
+        <strong>守望先锋系统拆解案.xlsx</strong>
+        <span>原始 Excel 文档 · 约 1.95 MB</span>
+        <a
+          class="download-link"
+          href="/downloads/overwatch-system-breakdown.xlsx"
+          download="守望先锋系统拆解案.xlsx"
+        >下载完整文档</a>
+      </div>
+      <div class="download-card">
+        <strong>守望先锋系统框架.xmind</strong>
+        <span>原始 XMind 文档 · 约 320 KB</span>
+        <a
+          class="download-link"
+          href="/downloads/overwatch-system-framework.xmind"
+          download="守望先锋系统框架.xmind"
+        >下载完整文档</a>
+      </div>
     `,tags:[`守望先锋`,`游戏分析`]}],Tc={class:`home`},Ec={key:0,class:`empty`},Dc={class:`post-meta`},Oc={key:0,class:`tags`},kc={class:`post-summary`},Ac=so({__name:`Home`,setup(e){let t=[...wc].sort((e,t)=>new Date(t.date)-new Date(e.date)),n=e=>(e.tags||[]).filter(e=>e.toLowerCase()!==`blog`);return(e,r)=>{let i=lr(`router-link`);return W(),G(`div`,Tc,[r[1]||=K(`h2`,{class:`page-title`},`文章列表`,-1),Wt(t).length===0?(W(),G(`div`,Ec,`暂无文章`)):Hi(``,!0),(W(!0),G(H,null,pr(Wt(t),e=>(W(),G(`article`,{key:e.id,class:`post-card`},[q(i,{to:`/post/${e.id}`,class:`post-title-link`},{default:wn(()=>[K(`h3`,null,A(e.title),1)]),_:2},1032,[`to`]),K(`div`,Dc,[K(`time`,null,A(e.date),1),n(e).length?(W(),G(`span`,Oc,[(W(!0),G(H,null,pr(n(e),e=>(W(),G(`span`,{key:e,class:`tag`},A(e),1))),128))])):Hi(``,!0)]),K(`p`,kc,A(e.summary),1),q(i,{to:`/post/${e.id}`,class:`read-more`},{default:wn(()=>[...r[0]||=[Vi(`阅读全文 →`,-1)]]),_:1},8,[`to`])]))),128))])}}},[[`__scopeId`,`data-v-a5e47ffb`]]),jc={key:0,class:`post-detail`},Mc={class:`post-meta`},Nc={key:0,class:`tags`},Pc=[`innerHTML`],Fc=[{path:`/`,name:`home`,component:Ac},{path:`/post/:id`,name:`post`,component:so({__name:`Post`,setup(e){let t=Cc(),n=Sc(),r=Y(()=>wc.find(e=>e.id===Number(t.params.id))),i=Y(()=>(r.value?.tags||[]).filter(e=>e.toLowerCase()!==`blog`));return r.value||n.replace(`/`),(e,t)=>{let n=lr(`router-link`);return r.value?(W(),G(`div`,jc,[q(n,{to:`/`,class:`back-link`},{default:wn(()=>[...t[0]||=[Vi(`← 返回首页`,-1)]]),_:1}),K(`article`,null,[K(`h1`,null,A(r.value.title),1),K(`div`,Mc,[K(`time`,null,A(r.value.date),1),i.value.length?(W(),G(`span`,Nc,[(W(!0),G(H,null,pr(i.value,e=>(W(),G(`span`,{key:e,class:`tag`},A(e),1))),128))])):Hi(``,!0)]),K(`div`,{class:`post-content`,innerHTML:r.value.content},null,8,Pc)])])):Hi(``,!0)}}},[[`__scopeId`,`data-v-9d54fbf7`]])}],Ic=xc({history:Hs(),routes:Fc});io(bo).use(Ic).mount(`#app`);
