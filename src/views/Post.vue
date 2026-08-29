@@ -87,14 +87,20 @@ h1 {
 
 .post-content :deep(h2) {
   font-size: 1.3rem;
+  font-weight: 700;
   margin: 1.8rem 0 0.8rem;
   color: var(--color-heading);
 }
 
 .post-content :deep(h3) {
   font-size: 1.1rem;
+  font-weight: 600;
   margin: 1.5rem 0 0.6rem;
   color: var(--color-heading);
+}
+
+.post-content :deep(strong) {
+  font-weight: 700;
 }
 
 .post-content :deep(p) {
