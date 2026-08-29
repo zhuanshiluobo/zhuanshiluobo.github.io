@@ -99,4 +99,37 @@ git revert <commit>     # 撤销某次提交</code></pre>
           download="守望先锋系统框架.xmind"
         >下载完整文档</a>
       </div>
-    `,tags:[`守望先锋`,`游戏分析`]}],Tc={class:`home`},Ec={key:0,class:`empty`},Dc={class:`post-meta`},Oc={key:0,class:`tags`},kc={class:`post-summary`},Ac=so({__name:`Home`,setup(e){let t=[...wc].sort((e,t)=>new Date(t.date)-new Date(e.date)),n=e=>(e.tags||[]).filter(e=>e.toLowerCase()!==`blog`);return(e,r)=>{let i=lr(`router-link`);return W(),G(`div`,Tc,[r[1]||=K(`h2`,{class:`page-title`},`文章列表`,-1),Wt(t).length===0?(W(),G(`div`,Ec,`暂无文章`)):Hi(``,!0),(W(!0),G(H,null,pr(Wt(t),e=>(W(),G(`article`,{key:e.id,class:`post-card`},[q(i,{to:`/post/${e.id}`,class:`post-title-link`},{default:wn(()=>[K(`h3`,null,A(e.title),1)]),_:2},1032,[`to`]),K(`div`,Dc,[K(`time`,null,A(e.date),1),n(e).length?(W(),G(`span`,Oc,[(W(!0),G(H,null,pr(n(e),e=>(W(),G(`span`,{key:e,class:`tag`},A(e),1))),128))])):Hi(``,!0)]),K(`p`,kc,A(e.summary),1),q(i,{to:`/post/${e.id}`,class:`read-more`},{default:wn(()=>[...r[0]||=[Vi(`阅读全文 →`,-1)]]),_:1},8,[`to`])]))),128))])}}},[[`__scopeId`,`data-v-a5e47ffb`]]),jc={key:0,class:`post-detail`},Mc={class:`post-meta`},Nc={key:0,class:`tags`},Pc=[`innerHTML`],Fc=[{path:`/`,name:`home`,component:Ac},{path:`/post/:id`,name:`post`,component:so({__name:`Post`,setup(e){let t=Cc(),n=Sc(),r=Y(()=>wc.find(e=>e.id===Number(t.params.id))),i=Y(()=>(r.value?.tags||[]).filter(e=>e.toLowerCase()!==`blog`));return r.value||n.replace(`/`),(e,t)=>{let n=lr(`router-link`);return r.value?(W(),G(`div`,jc,[q(n,{to:`/`,class:`back-link`},{default:wn(()=>[...t[0]||=[Vi(`← 返回首页`,-1)]]),_:1}),K(`article`,null,[K(`h1`,null,A(r.value.title),1),K(`div`,Mc,[K(`time`,null,A(r.value.date),1),i.value.length?(W(),G(`span`,Nc,[(W(!0),G(H,null,pr(i.value,e=>(W(),G(`span`,{key:e,class:`tag`},A(e),1))),128))])):Hi(``,!0)]),K(`div`,{class:`post-content`,innerHTML:r.value.content},null,8,Pc)])])):Hi(``,!0)}}},[[`__scopeId`,`data-v-9d54fbf7`]])}],Ic=xc({history:Hs(),routes:Fc});io(bo).use(Ic).mount(`#app`);
+    `,tags:[`守望先锋`,`游戏分析`]},{id:8,title:`关于模型`,date:`2026-08-29`,summary:`记录 Blender 模型资源网站与 Unity 导入方案，并汇总《游城拓荒》手卡、过场动画及收藏室功能的开发进展。`,content:`
+      <p>你说得对，但是gpt 5.6sol xhigh在连上blender的mcp之后也是个****，完全听不懂人话，所以我只能自己上网找资料智能工人了。</p>
+
+      <h2>模型网站</h2>
+      <p>&emsp;这个网站能找到一些免费的资源，但是是英文，所以还是得靠一下伟大的翻译。</p>
+      <pre><code>https://sketchfab.com/feed</code></pre>
+      <p>&emsp;老牌网站模之屋，懂得都懂。</p>
+      <pre><code>https://www.aplaybox.com/</code></pre>
+
+      <h2>解决方案</h2>
+      <p>&emsp;一些<strong>关于.blend文件怎么导入到unity里还能用而不是变成一堆奇奇怪怪的材质</strong>的解决方案的连接。</p>
+      <pre><code>https://blog.csdn.net/2301_80167941/article/details/153050985</code></pre>
+
+      <h2>demo开发</h2>
+      <h3>新功能追加</h3>
+
+      <h3>手卡动画</h3>
+      <p>&emsp;是的，我看不下去这个<strong>僵硬的要死的</strong>手卡动画了，明天开始b站找点视频看看我们最好的sol改的石山代码，他完美的做到了我不提及的功能一概不做，甚至提示词里明确的两个边界一样当没看见（把手卡拿出来有动画放回去不做了，把手卡弹出有动画收回不做了），<s>听你探讨这些精彩的问题，我连手头的准备工作都得放下，令人佩服，博士，我真的服了</s></p>
+      <p>&emsp;今天算是搞了个大概，除了收回问题都解决了，<strong>奥特曼你的5h限制是⑩</strong>，plus基本不能干活pro5x勉强够用pro20x贵的要死买不起。</p>
+      <img src="/images/about-model-hand-card.png" alt="手卡动画开发效果">
+
+      <h3>过场动画</h3>
+      <p>&emsp;改了好几版，最后敲定的方案是展示至纯源石的模型在中间，闲着没事和联机等网络的时候可以拖着玩，布兰德。<s>模型还是整现成的，只写了个转动和惯性代码</s></p>
+      <p>&emsp;下一步要做的是小tips和进度条适配，我得想个办法找找参考，不然我都不知道写点什么，总不能抄规则书吧，那我之前做的规则书页面又小丑了。</p>
+      <img src="/images/about-model-transition.png" alt="至纯源石过场动画效果">
+
+      <h3>收藏室及成就</h3>
+      <p>&emsp;成就导向的游戏进程才是完整的，没有成就玩起来没意思。我准备把那个获得的成就整个类似三角洲的收藏室，关键性成就直接送你个纪念品<s>不是yj特有的限时纪念理智药</s>，你可以获得3D模型之后跑去收藏室页面转着玩，目前找的两个模型是源石和文武龙泡泡，<s>得想个办法把罗德岛搬过来·</s></p>
+      <p>&emsp;后续更新，近期没空。</p>
+
+      <h2>碎碎念环节</h2>
+      <p>&emsp;这个github.io的测试需求5我不是把issus关了吗怎么还能路由到，什么b问题我服了。</p>
+      <p>&emsp;买个域名怎么备案这么久，还要8个工作日审核才能上线。</p>
+    `,tags:[`游城拓荒`,`更新`,`建模`]}],Tc={class:`home`},Ec={key:0,class:`empty`},Dc={class:`post-meta`},Oc={key:0,class:`tags`},kc={class:`post-summary`},Ac=so({__name:`Home`,setup(e){let t=[...wc].sort((e,t)=>new Date(t.date)-new Date(e.date)),n=e=>(e.tags||[]).filter(e=>e.toLowerCase()!==`blog`);return(e,r)=>{let i=lr(`router-link`);return W(),G(`div`,Tc,[r[1]||=K(`h2`,{class:`page-title`},`文章列表`,-1),Wt(t).length===0?(W(),G(`div`,Ec,`暂无文章`)):Hi(``,!0),(W(!0),G(H,null,pr(Wt(t),e=>(W(),G(`article`,{key:e.id,class:`post-card`},[q(i,{to:`/post/${e.id}`,class:`post-title-link`},{default:wn(()=>[K(`h3`,null,A(e.title),1)]),_:2},1032,[`to`]),K(`div`,Dc,[K(`time`,null,A(e.date),1),n(e).length?(W(),G(`span`,Oc,[(W(!0),G(H,null,pr(n(e),e=>(W(),G(`span`,{key:e,class:`tag`},A(e),1))),128))])):Hi(``,!0)]),K(`p`,kc,A(e.summary),1),q(i,{to:`/post/${e.id}`,class:`read-more`},{default:wn(()=>[...r[0]||=[Vi(`阅读全文 →`,-1)]]),_:1},8,[`to`])]))),128))])}}},[[`__scopeId`,`data-v-a5e47ffb`]]),jc={key:0,class:`post-detail`},Mc={class:`post-meta`},Nc={key:0,class:`tags`},Pc=[`innerHTML`],Fc=[{path:`/`,name:`home`,component:Ac},{path:`/post/:id`,name:`post`,component:so({__name:`Post`,setup(e){let t=Cc(),n=Sc(),r=Y(()=>wc.find(e=>e.id===Number(t.params.id))),i=Y(()=>(r.value?.tags||[]).filter(e=>e.toLowerCase()!==`blog`));return r.value||n.replace(`/`),(e,t)=>{let n=lr(`router-link`);return r.value?(W(),G(`div`,jc,[q(n,{to:`/`,class:`back-link`},{default:wn(()=>[...t[0]||=[Vi(`← 返回首页`,-1)]]),_:1}),K(`article`,null,[K(`h1`,null,A(r.value.title),1),K(`div`,Mc,[K(`time`,null,A(r.value.date),1),i.value.length?(W(),G(`span`,Nc,[(W(!0),G(H,null,pr(i.value,e=>(W(),G(`span`,{key:e,class:`tag`},A(e),1))),128))])):Hi(``,!0)]),K(`div`,{class:`post-content`,innerHTML:r.value.content},null,8,Pc)])])):Hi(``,!0)}}},[[`__scopeId`,`data-v-a8663154`]])}],Ic=xc({history:Hs(),routes:Fc});io(bo).use(Ic).mount(`#app`);

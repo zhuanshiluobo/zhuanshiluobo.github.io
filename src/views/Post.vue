@@ -101,6 +101,14 @@ h1 {
   margin-bottom: 1rem;
 }
 
+.post-content :deep(img) {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1rem auto 1.5rem;
+  border-radius: 6px;
+}
+
 .post-content :deep(ul),
 .post-content :deep(ol) {
   margin-bottom: 1rem;
