@@ -2,7 +2,7 @@ name: Import issue post
 
 on:
   issues:
-    types: [opened, edited, labeled]
+    types: [opened]
   workflow_dispatch:
     inputs:
       issue_number:
