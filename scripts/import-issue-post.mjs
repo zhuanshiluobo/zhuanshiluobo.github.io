@@ -152,6 +152,14 @@ function markdownToHtml(markdown) {
       continue
     }
 
+    const image = githubImageToHtml(line)
+    if (image) {
+      flushParagraph()
+      flushList()
+      html.push(image)
+      continue
+    }
+
     const heading = /^(#{2,3})\s+(.+)$/.exec(line)
     if (heading) {
       flushParagraph()
@@ -184,6 +192,51 @@ function inlineMarkdown(text) {
   return escapeHtml(text)
     .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
     .replace(/`([^`]+)`/g, '<code>$1</code>')
+}
+
+function githubImageToHtml(line) {
+  const trimmed = line.trim()
+  const htmlImage = /^<img\b([^>]*)\/?\s*>$/i.exec(trimmed)
+
+  if (htmlImage) {
+    const src = readHtmlAttribute(htmlImage[1], 'src')
+    const alt = readHtmlAttribute(htmlImage[1], 'alt') || ''
+    return safeGitHubImage(src, alt)
+  }
+
+  const markdownImage = /^!\[([^\]]*)\]\((\S+?)(?:\s+["'][^"']*["'])?\)$/.exec(trimmed)
+  if (markdownImage) {
+    return safeGitHubImage(markdownImage[2], markdownImage[1])
+  }
+
+  return ''
+}
+
+function readHtmlAttribute(attributes, name) {
+  const pattern = new RegExp(`\\b${name}\\s*=\\s*(?:"([^"]*)"|'([^']*)')`, 'i')
+  const match = pattern.exec(attributes)
+  return match ? (match[1] ?? match[2] ?? '') : ''
+}
+
+function safeGitHubImage(src, alt) {
+  if (!src) {
+    return ''
+  }
+
+  try {
+    const url = new URL(src)
+    const isCurrentAttachment = url.hostname === 'github.com'
+      && /^\/user-attachments\/assets\/[0-9a-f-]+$/i.test(url.pathname)
+    const isLegacyAttachment = url.hostname === 'user-images.githubusercontent.com'
+
+    if (url.protocol !== 'https:' || (!isCurrentAttachment && !isLegacyAttachment)) {
+      return ''
+    }
+
+    return `<img src="${escapeHtml(url.href)}" alt="${escapeHtml(alt)}" loading="lazy">`
+  } catch {
+    return ''
+  }
 }
 
 function escapeHtml(value) {

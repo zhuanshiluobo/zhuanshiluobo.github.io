@@ -72,7 +72,7 @@ export const posts = [
     title: "测试拖动到issues里的图片能否上传",
     date: "2026-08-30",
     summary: "测试图片能否上传",
-    content: "<p>测试图片能否上传 &lt;img width=&quot;1280&quot; height=&quot;1280&quot; alt=&quot;Image&quot; src=&quot;https://github.com/user-attachments/assets/b85160e3-ea6b-442d-84f9-c7a43e8dfbd3&quot; /&gt;</p>",
+    content: "<p>测试图片能否上传</p>\n<img src=\"https://github.com/user-attachments/assets/b85160e3-ea6b-442d-84f9-c7a43e8dfbd3\" alt=\"Image\" loading=\"lazy\">",
     tags: []
   }
 ]
