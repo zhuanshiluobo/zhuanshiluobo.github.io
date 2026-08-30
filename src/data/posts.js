@@ -38,18 +38,7 @@ export const posts = [
     title: "守望先锋：占点分析",
     date: "2026-08-21",
     summary: "守望先锋占点分析，提供完整 Word 文档下载。",
-    content: `
-      <p>本文的完整内容整理在 Word 文档中，可通过下方按钮下载原始文件。</p>
-      <div class="download-card">
-        <strong>守望先锋-占点分析.docx</strong>
-        <span>Word 文档 · 约 177 KB</span>
-        <a
-          class="download-link"
-          href="/downloads/overwatch-point-capture-analysis.docx"
-          download="守望先锋-占点分析.docx"
-        >下载完整文档</a>
-      </div>
-    `,
+    content: "\n      <p>本文的完整内容整理在 Word 文档中，可通过下方按钮下载原始文件。</p>\n      <div class=\"download-card\">\n        <strong>守望先锋-占点分析.docx</strong>\n        <span>Word 文档 · 约 177 KB</span>\n        <a\n          class=\"download-link\"\n          href=\"/downloads/overwatch-point-capture-analysis.docx\"\n          download=\"守望先锋-占点分析.docx\"\n        >下载完整文档</a>\n      </div>\n    ",
     tags: ["守望先锋", "游戏分析"]
   },
   {
@@ -57,23 +46,7 @@ export const posts = [
     title: "《游城拓荒：铸基者》v0.4.0-alpha 版本更新策划案",
     date: "2026-08-21",
     summary: "围绕 3D 棋盘与地图导航、底部角色手牌、资源计数板和对局界面布局展开的 v0.4.0-alpha 发布策划。",
-    content: `
-      <p>本文整理《游城拓荒：铸基者》v0.4.0-alpha 版本更新策划案。该版本以“更好观察、更快确认、更少打断”为体验方向，不新增基础规则。</p>
-      <p><strong>前置版本：</strong>v0.3.0-alpha<br>
-      <strong>版本状态：</strong>待合并开发内容的发布策划<br>
-      <strong>策划范围：</strong>3D 棋盘与地图导航、底部角色手牌、资源计数板、设置与显示、对局界面布局优化<br>
-      <strong>文档日期：</strong>2026 年 8 月 20 日</p>
-
-      <div class="download-card">
-        <strong>0.4.0-alpha更新策划案.docx</strong>
-        <span>原始 Word 文档 · 约 31 KB</span>
-        <a
-          class="download-link"
-          href="/downloads/you-cheng-tuo-huang-v0.4.0-alpha-plan.docx"
-          download="0.4.0-alpha更新策划案.docx"
-        >下载完整文档</a>
-      </div>
-    `,
+    content: "\n      <p>本文整理《游城拓荒：铸基者》v0.4.0-alpha 版本更新策划案。该版本以“更好观察、更快确认、更少打断”为体验方向，不新增基础规则。</p>\n      <p><strong>前置版本：</strong>v0.3.0-alpha<br>\n      <strong>版本状态：</strong>待合并开发内容的发布策划<br>\n      <strong>策划范围：</strong>3D 棋盘与地图导航、底部角色手牌、资源计数板、设置与显示、对局界面布局优化<br>\n      <strong>文档日期：</strong>2026 年 8 月 20 日</p>\n\n      <div class=\"download-card\">\n        <strong>0.4.0-alpha更新策划案.docx</strong>\n        <span>原始 Word 文档 · 约 31 KB</span>\n        <a\n          class=\"download-link\"\n          href=\"/downloads/you-cheng-tuo-huang-v0.4.0-alpha-plan.docx\"\n          download=\"0.4.0-alpha更新策划案.docx\"\n        >下载完整文档</a>\n      </div>\n    ",
     tags: ["游城拓荒", "游戏开发", "版本策划"]
   },
   {
@@ -81,27 +54,7 @@ export const posts = [
     title: "守望先锋系统拆解案",
     date: "2026-08-25",
     summary: "拆解《守望先锋》的系统框架、目标玩法与竞技规则，并评析英雄协作、成长商业化及整体体验的优缺点。",
-    content: `
-      <p>本次系统拆解整理为 Excel 分析文档与 XMind 系统框架图，两份原始文件可在下方完整下载。</p>
-      <div class="download-card">
-        <strong>守望先锋系统拆解案.xlsx</strong>
-        <span>原始 Excel 文档 · 约 1.95 MB</span>
-        <a
-          class="download-link"
-          href="/downloads/overwatch-system-breakdown.xlsx"
-          download="守望先锋系统拆解案.xlsx"
-        >下载完整文档</a>
-      </div>
-      <div class="download-card">
-        <strong>守望先锋系统框架.xmind</strong>
-        <span>原始 XMind 文档 · 约 320 KB</span>
-        <a
-          class="download-link"
-          href="/downloads/overwatch-system-framework.xmind"
-          download="守望先锋系统框架.xmind"
-        >下载完整文档</a>
-      </div>
-    `,
+    content: "\n      <p>本次系统拆解整理为 Excel 分析文档与 XMind 系统框架图，两份原始文件可在下方完整下载。</p>\n      <div class=\"download-card\">\n        <strong>守望先锋系统拆解案.xlsx</strong>\n        <span>原始 Excel 文档 · 约 1.95 MB</span>\n        <a\n          class=\"download-link\"\n          href=\"/downloads/overwatch-system-breakdown.xlsx\"\n          download=\"守望先锋系统拆解案.xlsx\"\n        >下载完整文档</a>\n      </div>\n      <div class=\"download-card\">\n        <strong>守望先锋系统框架.xmind</strong>\n        <span>原始 XMind 文档 · 约 320 KB</span>\n        <a\n          class=\"download-link\"\n          href=\"/downloads/overwatch-system-framework.xmind\"\n          download=\"守望先锋系统框架.xmind\"\n        >下载完整文档</a>\n      </div>\n    ",
     tags: ["守望先锋", "游戏分析"]
   },
   {
@@ -109,40 +62,17 @@ export const posts = [
     title: "关于模型",
     date: "2026-08-29",
     summary: "记录 Blender 模型资源网站与 Unity 导入方案，并汇总《游城拓荒》手卡、过场动画及收藏室功能的开发进展。",
-    content: `
-      <p>你说得对，但是gpt 5.6sol xhigh在连上blender的mcp之后也是个****，完全听不懂人话，所以我只能自己上网找资料智能工人了。</p>
-
-      <h2>模型网站</h2>
-      <p>&emsp;这个网站能找到一些免费的资源，但是是英文，所以还是得靠一下伟大的翻译。</p>
-      <pre><code>https://sketchfab.com/feed</code></pre>
-      <p>&emsp;老牌网站模之屋，懂得都懂。</p>
-      <pre><code>https://www.aplaybox.com/</code></pre>
-
-      <h2>解决方案</h2>
-      <p>&emsp;一些<strong>关于.blend文件怎么导入到unity里还能用而不是变成一堆奇奇怪怪的材质</strong>的解决方案的连接。</p>
-      <pre><code>https://blog.csdn.net/2301_80167941/article/details/153050985</code></pre>
-
-      <h2>demo开发</h2>
-      <h3>新功能追加</h3>
-
-      <h3>手卡动画</h3>
-      <p>&emsp;是的，我看不下去这个<strong>僵硬的要死的</strong>手卡动画了，明天开始b站找点视频看看我们最好的sol改的石山代码，他完美的做到了我不提及的功能一概不做，甚至提示词里明确的两个边界一样当没看见（把手卡拿出来有动画放回去不做了，把手卡弹出有动画收回不做了），<s>听你探讨这些精彩的问题，我连手头的准备工作都得放下，令人佩服，博士，我真的服了</s></p>
-      <p>&emsp;今天算是搞了个大概，除了收回问题都解决了，<strong>奥特曼你的5h限制是⑩</strong>，plus基本不能干活pro5x勉强够用pro20x贵的要死买不起。</p>
-      <img src="/images/about-model-hand-card.png" alt="手卡动画开发效果">
-
-      <h3>过场动画</h3>
-      <p>&emsp;改了好几版，最后敲定的方案是展示至纯源石的模型在中间，闲着没事和联机等网络的时候可以拖着玩，布兰德。<s>模型还是整现成的，只写了个转动和惯性代码</s></p>
-      <p>&emsp;下一步要做的是小tips和进度条适配，我得想个办法找找参考，不然我都不知道写点什么，总不能抄规则书吧，那我之前做的规则书页面又小丑了。</p>
-      <img src="/images/about-model-transition.png" alt="至纯源石过场动画效果">
-
-      <h3>收藏室及成就</h3>
-      <p>&emsp;成就导向的游戏进程才是完整的，没有成就玩起来没意思。我准备把那个获得的成就整个类似三角洲的收藏室，关键性成就直接送你个纪念品<s>不是yj特有的限时纪念理智药</s>，你可以获得3D模型之后跑去收藏室页面转着玩，目前找的两个模型是源石和文武龙泡泡，<s>得想个办法把罗德岛搬过来·</s></p>
-      <p>&emsp;后续更新，近期没空。</p>
-
-      <h2>碎碎念环节</h2>
-      <p>&emsp;这个github.io的测试需求5我不是把issus关了吗怎么还能路由到，什么b问题我服了。</p>
-      <p>&emsp;买个域名怎么备案这么久，还要8个工作日审核才能上线。</p>
-    `,
+    content: "\n      <p>你说得对，但是gpt 5.6sol xhigh在连上blender的mcp之后也是个****，完全听不懂人话，所以我只能自己上网找资料智能工人了。</p>\n\n      <h2>模型网站</h2>\n      <p>&emsp;这个网站能找到一些免费的资源，但是是英文，所以还是得靠一下伟大的翻译。</p>\n      <pre><code>https://sketchfab.com/feed</code></pre>\n      <p>&emsp;老牌网站模之屋，懂得都懂。</p>\n      <pre><code>https://www.aplaybox.com/</code></pre>\n\n      <h2>解决方案</h2>\n      <p>&emsp;一些<strong>关于.blend文件怎么导入到unity里还能用而不是变成一堆奇奇怪怪的材质</strong>的解决方案的连接。</p>\n      <pre><code>https://blog.csdn.net/2301_80167941/article/details/153050985</code></pre>\n\n      <h2>demo开发</h2>\n      <h3>新功能追加</h3>\n\n      <h3>手卡动画</h3>\n      <p>&emsp;是的，我看不下去这个<strong>僵硬的要死的</strong>手卡动画了，明天开始b站找点视频看看我们最好的sol改的石山代码，他完美的做到了我不提及的功能一概不做，甚至提示词里明确的两个边界一样当没看见（把手卡拿出来有动画放回去不做了，把手卡弹出有动画收回不做了），<s>听你探讨这些精彩的问题，我连手头的准备工作都得放下，令人佩服，博士，我真的服了</s></p>\n      <p>&emsp;今天算是搞了个大概，除了收回问题都解决了，<strong>奥特曼你的5h限制是⑩</strong>，plus基本不能干活pro5x勉强够用pro20x贵的要死买不起。</p>\n      <img src=\"/images/about-model-hand-card.png\" alt=\"手卡动画开发效果\">\n\n      <h3>过场动画</h3>\n      <p>&emsp;改了好几版，最后敲定的方案是展示至纯源石的模型在中间，闲着没事和联机等网络的时候可以拖着玩，布兰德。<s>模型还是整现成的，只写了个转动和惯性代码</s></p>\n      <p>&emsp;下一步要做的是小tips和进度条适配，我得想个办法找找参考，不然我都不知道写点什么，总不能抄规则书吧，那我之前做的规则书页面又小丑了。</p>\n      <img src=\"/images/about-model-transition.png\" alt=\"至纯源石过场动画效果\">\n\n      <h3>收藏室及成就</h3>\n      <p>&emsp;成就导向的游戏进程才是完整的，没有成就玩起来没意思。我准备把那个获得的成就整个类似三角洲的收藏室，关键性成就直接送你个纪念品<s>不是yj特有的限时纪念理智药</s>，你可以获得3D模型之后跑去收藏室页面转着玩，目前找的两个模型是源石和文武龙泡泡，<s>得想个办法把罗德岛搬过来·</s></p>\n      <p>&emsp;后续更新，近期没空。</p>\n\n      <h2>碎碎念环节</h2>\n      <p>&emsp;这个github.io的测试需求5我不是把issus关了吗怎么还能路由到，什么b问题我服了。</p>\n      <p>&emsp;买个域名怎么备案这么久，还要8个工作日审核才能上线。</p>\n    ",
     tags: ["游城拓荒", "更新", "建模"]
+  },
+  {
+    id: 9,
+    issueNumber: 11,
+    source: "https://github.com/zhuanshiluobo/zhuanshiluobo.github.io/issues/11",
+    title: "测试拖动到issues里的图片能否上传",
+    date: "2026-08-30",
+    summary: "测试图片能否上传",
+    content: "<p>测试图片能否上传 &lt;img width=&quot;1280&quot; height=&quot;1280&quot; alt=&quot;Image&quot; src=&quot;https://github.com/user-attachments/assets/b85160e3-ea6b-442d-84f9-c7a43e8dfbd3&quot; /&gt;</p>",
+    tags: []
   }
 ]
