@@ -84,5 +84,15 @@ export const posts = [
     summary: "博客上线",
     content: "<p># 博客上线</p>\n<p>&amp;emsp;在搞备案的时候顺便搞了下SSL证书，nginx对于发布这一块确实厉害，就是宝塔面板和gpt下了两次导致中间排查问题了半小时，结果就是现在的宝塔面板上显示还是没有ssl，但是依然可以通过访问https往里进，就很奇怪，明明备案还没过的说。  不管怎么说现在国内总算是可以通过输入zhuanshiluobo.me访问了，<strong>可喜可贺可喜可贺</strong>。</p>\n<p>&amp;emsp;我说真的现在的技术栈虽然我看得懂但是真的很菜，样式依托的同时还没给多少修改的空间，我迟早得重构整个页面，至少也得加个音乐播放器、动态背景和数据库，不然也太单调了。</p>\n<p>&amp;emsp;bzw，linux确实比windows顺眼多了，至少在命令符上powershell和cmd还是太⑩了，报错成山。</p>\n<p># demo开发</p>\n<p>&amp;emsp;想了下还是先把收藏室页面搞定了，这样也方便后续加奇奇怪怪的模型的时候可以先填进去，sol已经降智到分不清上下左右了，做个旋转的功能做了七八轮5h都耗完了也是人才，<strong>你最好是拿去训练gpt6才这样奥特曼。</strong></p>\n<img src=\"https://github.com/user-attachments/assets/25b0078a-809f-4ed3-b8e8-6bc7e10c6fb4\" alt=\"Image\" loading=\"lazy\">\n<p>&amp;emsp;明天得学习下光照相关的功能了，不然这个材质看着有点塑料，&amp;emsp;~~官方的源石其实也是塑料感满满~~  也不方便后续其他的模型导入。</p>\n<p>&amp;emsp;其实我感觉接下来除了继续处理动画还有什么可以优化的地方吗，还是说直接开始制作三人和二人的相关规则，这个有四人做参考应该没那么复杂，充其量搬下地图和适配下新的卡片效果，ai应该能自己跑出来&amp;emsp;&amp;emsp;*应该吧*。</p>",
     tags: []
+  },
+  {
+    id: 11,
+    issueNumber: 13,
+    source: "https://github.com/zhuanshiluobo/zhuanshiluobo.github.io/issues/13",
+    title: "issues-bug",
+    date: "2026-08-30",
+    summary: "issues-bug",
+    content: "<p># issues-bug</p>\n<p>&amp;emsp;上线的时候看了一眼，我真没绷住哥们这sol靠不靠谱啊，什么叫上传issues的时候看一眼action，原来执行两次的bug修好了变成四次了？？</p>\n<p>&amp;emsp;这降智真的无敌咯，已找到opus5中转，明天换hermes跑了。</p>\n<img src=\"https://github.com/user-attachments/assets/a9dae220-06b4-4ce7-9e3b-090f755c2255\" alt=\"Image\" loading=\"lazy\">",
+    tags: []
   }
 ]
