@@ -94,5 +94,15 @@ export const posts = [
     summary: "上线的时候看了一眼，我真没绷住哥们这sol靠不靠谱啊，什么叫上传issues的时候看一眼action，原来执行两次的bug修好了变成四次了？？",
     content: "<p>&emsp;上线的时候看了一眼，我真没绷住哥们这sol靠不靠谱啊，什么叫上传issues的时候看一眼action，原来执行两次的bug修好了变成四次了？？</p>\n<p>&emsp;这降智真的无敌咯，已找到opus5中转，明天换hermes跑了。</p>\n<img src=\"https://github.com/user-attachments/assets/a9dae220-06b4-4ce7-9e3b-090f755c2255\" alt=\"Image\" loading=\"lazy\">",
     tags: []
+  },
+  {
+    id: 12,
+    issueNumber: 14,
+    source: "https://github.com/zhuanshiluobo/zhuanshiluobo.github.io/issues/14",
+    title: "关于修bug",
+    date: "2026-08-31",
+    summary: "也不知道哪里的问题，现在通过issues发布的md格式文档的时候转换器又坏了，现在md格式完全检测不出来，纯是字符串。",
+    content: "<h2>关于博客</h2>\n<h2>新bug</h2>\n<p>&emsp;也不知道哪里的问题，现在通过issues发布的md格式文档的时候转换器又坏了，现在md格式完全检测不出来，纯是字符串。</p>\n<p>&emsp;66还有新bug，现在默认是从下到上日期越来越新，但是同一天发布的却反过来了，变成同一天新发布的在下面。找了半天还以为这个部署又出新bug了，修一下才发现原来是排序问题。</p>\n<p>&emsp;<strong>搞半天不还是得修。不过这个以后再说，目前不咋影响使用。</strong></p>\n<h2>新机制</h2>\n<p>&emsp;研究了三个小时的宝塔面板，跑到ssh里改的数据表才把master分支加上去，图形化界面虽然方便但出了问题也是真难改。</p>\n<p>&emsp;最后解决方案其实就是在宝塔页面的网站目录里<strong>把网站目录设置为git仓库地址，运行目录设置为网页构建</strong>的/docs文件夹，这样就能在正常使用nginx的npm run构建了。</p>\n<img src=\"https://github.com/user-attachments/assets/9152856e-5196-4c56-9cb9-c2b2af4ac005\" alt=\"Image\" loading=\"lazy\">\n<p>&emsp;对了，不要忘记把防跨站功能关闭，这个在宝塔面板上修改目录的时候会自动给你打开，后续修改的时候会报错。<s>我不懂我瞎说的我感觉这玩意没用</s></p>\n<img src=\"https://github.com/user-attachments/assets/1b3a1858-56c1-4a0a-ba0b-2e81c5372c5c\" alt=\"Image\" loading=\"lazy\">\n<h2>demo开发</h2>\n<h2>WebGL</h2>\n<p>&emsp;今天想制作一个能在vue博客页面直接玩的demo，结果搞了半天WebGL的调试，发现没有了ai报错如山，没办法只能继续丢给ai生成了，目前的原因是WebGL与steam服务冲突，也就是<strong>Steamworks.NET 不提供 WebGL 所需的 Steamworks 类型</strong>，要么注释掉<s>试过了要改的文件太多而且嵌套引用带来的问题多的要死</s>，要么重写个分支单独做。（这个目前在考虑做一下试试顺便练下怎么用steam desktop管理分支）</p>\n<p>&emsp;期待后续开发吧，这一块要改的不少。<em>或者可以直接拿牢版本单机用？</em></p>\n<h2>手卡</h2>\n<p>&emsp;依旧手卡，依旧看不见就是做好了。打死我也想不到让手牌放置到待选区确认的方式是把手牌区的对应卡变成透明的这种解决方案，五张扇形手牌中间空一格说是。</p>\n<img src=\"https://github.com/user-attachments/assets/ddc3561e-dc9a-49f2-aeb1-f88b6a9cb0ea\" alt=\"Image\" loading=\"lazy\">\n<h3>优化</h3>\n<p>&emsp;更新拖动松手轨迹；更新收藏室让描述更加拟人；做了一个新的过场动画让不怎么需要加载的页面快速加载。<s>今天依旧没开始做多人适配。</s></p>\n<h2>新坑</h2>\n<p>&emsp;<s>我有一个绝妙的点子，可惜这里空间太小写不下。</s></p>\n<p>&emsp;wait 这里我想写多少写多少，哈哈。</p>\n<p>&emsp;我觉得堆叠大陆是个好玩的模式，正在思考和胡闹厨房like（类似多人联机派对）、模拟经营的结合体，感觉会很好玩，还适合搞成增量、挂机玩法和肉鸽玩法，不过一切等找到工作再说。</p>\n<p>&emsp;今天把手上的系统拆解案结了，明天写新的策划案试试，感觉现在这个没什么竞争力，而且写的也不多。</p>",
+    tags: ["enhancement", "question", "游城拓荒", "博客"]
   }
 ]
