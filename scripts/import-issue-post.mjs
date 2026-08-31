@@ -6,6 +6,7 @@ const issueNumber = Number(process.env.ISSUE_NUMBER || 0)
 const issueTitle = process.env.ISSUE_TITLE || ''
 const issueBody = process.env.ISSUE_BODY || ''
 const issueUrl = process.env.ISSUE_URL || ''
+const issueCreatedAt = process.env.ISSUE_CREATED_AT || ''
 const issueLabels = parseIssueLabels(process.env.ISSUE_LABELS || '')
 
 if (!issueNumber || !issueTitle || !issueBody.trim()) {
@@ -30,8 +31,10 @@ const postsModule = await import(`${pathToFileUrl(postsFile)}?t=${Date.now()}`)
 const posts = postsModule.posts || []
 const existingIndex = posts.findIndex((post) => post.issueNumber === issueNumber)
 const nextId = existingIndex >= 0 ? posts[existingIndex].id : nextPostId(posts)
-const date = metadata.date
-  || (existingIndex >= 0 ? posts[existingIndex].date : new Date().toISOString().slice(0, 10))
+const date = normalizePublishedAt(
+  metadata.date
+    || (existingIndex >= 0 ? posts[existingIndex].date : issueCreatedAt || new Date().toISOString())
+)
 
 const post = {
   id: nextId,
@@ -129,6 +132,20 @@ function firstPlainLine(body) {
 
 function nextPostId(posts) {
   return posts.reduce((max, post) => Math.max(max, Number(post.id) || 0), 0) + 1
+}
+
+function normalizePublishedAt(value) {
+  const publishedAt = String(value || '').trim()
+
+  if (/^\d{4}-\d{2}-\d{2}$/.test(publishedAt)) {
+    return `${publishedAt}T00:00:00+08:00`
+  }
+
+  if (Number.isNaN(Date.parse(publishedAt))) {
+    throw new Error(`Invalid post date: ${publishedAt}`)
+  }
+
+  return publishedAt.replace(/\.\d{3}(?=Z$|[+-]\d{2}:\d{2}$)/, '')
 }
 
 function markdownToHtml(markdown) {

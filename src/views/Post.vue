@@ -2,6 +2,7 @@
 import { computed } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { posts } from '../data/posts.js'
+import { formatPostDate } from '../utils/formatPostDate.js'
 
 const route = useRoute()
 const router = useRouter()
@@ -20,7 +21,7 @@ if (!post.value) {
     <article>
       <h1>{{ post.title }}</h1>
       <div class="post-meta">
-        <time>{{ post.date }}</time>
+        <time :datetime="post.date">{{ formatPostDate(post.date) }}</time>
         <span v-if="visibleTags.length" class="tags">
           <span v-for="tag in visibleTags" :key="tag" class="tag">{{ tag }}</span>
         </span>

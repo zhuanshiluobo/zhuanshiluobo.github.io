@@ -56,6 +56,7 @@ jobs:
             core.setOutput('title', issue.title)
             core.setOutput('body', issue.body || '')
             core.setOutput('html_url', issue.html_url)
+            core.setOutput('created_at', issue.created_at)
             core.setOutput(
               'labels',
               JSON.stringify(issue.labels.map((label) => typeof label === 'string' ? label : label.name))
@@ -67,6 +68,7 @@ jobs:
           ISSUE_TITLE: ${{ steps.issue.outputs.title }}
           ISSUE_BODY: ${{ steps.issue.outputs.body }}
           ISSUE_URL: ${{ steps.issue.outputs.html_url }}
+          ISSUE_CREATED_AT: ${{ steps.issue.outputs.created_at }}
           ISSUE_LABELS: ${{ steps.issue.outputs.labels }}
         run: node scripts/import-issue-post.mjs
 

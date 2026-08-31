@@ -130,12 +130,6 @@ onUnmounted(() => {
         <li>收藏室与成就系统</li>
       </ul>
     </section>
-    <section class="section">
-      <h2>前往关注</h2>
-      <ul>
-        <li>https://github.com/zhuanshiluobo</li>
-      </ul>
-    </section>
   </div>
 </template>
 

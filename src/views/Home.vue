@@ -1,5 +1,6 @@
 <script setup>
 import { posts } from '../data/posts.js'
+import { formatPostDate } from '../utils/formatPostDate.js'
 
 const sortedPosts = [...posts].sort((a, b) => new Date(b.date) - new Date(a.date))
 const visibleTags = (post) => (post.tags || []).filter(tag => tag.toLowerCase() !== 'blog')
@@ -14,7 +15,7 @@ const visibleTags = (post) => (post.tags || []).filter(tag => tag.toLowerCase() 
         <h3>{{ post.title }}</h3>
       </router-link>
       <div class="post-meta">
-        <time>{{ post.date }}</time>
+        <time :datetime="post.date">{{ formatPostDate(post.date) }}</time>
         <span v-if="visibleTags(post).length" class="tags">
           <span v-for="tag in visibleTags(post)" :key="tag" class="tag">{{ tag }}</span>
         </span>
