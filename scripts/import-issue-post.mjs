@@ -6,6 +6,7 @@ const issueNumber = Number(process.env.ISSUE_NUMBER || 0)
 const issueTitle = process.env.ISSUE_TITLE || ''
 const issueBody = process.env.ISSUE_BODY || ''
 const issueUrl = process.env.ISSUE_URL || ''
+const issueLabels = parseIssueLabels(process.env.ISSUE_LABELS || '')
 
 if (!issueNumber || !issueTitle || !issueBody.trim()) {
   throw new Error('Missing issue metadata. ISSUE_NUMBER, ISSUE_TITLE, and ISSUE_BODY are required.')
@@ -13,10 +14,9 @@ if (!issueNumber || !issueTitle || !issueBody.trim()) {
 
 const metadata = parseMetadata(issueBody)
 const title = metadata.title || issueTitle
-const date = metadata.date || new Date().toISOString().slice(0, 10)
 const summary = metadata.summary || firstPlainLine(issueBody)
-const tags = parseTags(metadata.tags)
-const content = metadata.content || stripMetadata(issueBody)
+const tags = parseTags(metadata.tags || issueLabels)
+const content = removeDuplicateTitle(metadata.content || stripMetadata(issueBody), title)
 
 if (!summary) {
   throw new Error('Missing post summary. Add `summary: ...` to the issue body.')
@@ -30,6 +30,8 @@ const postsModule = await import(`${pathToFileUrl(postsFile)}?t=${Date.now()}`)
 const posts = postsModule.posts || []
 const existingIndex = posts.findIndex((post) => post.issueNumber === issueNumber)
 const nextId = existingIndex >= 0 ? posts[existingIndex].id : nextPostId(posts)
+const date = metadata.date
+  || (existingIndex >= 0 ? posts[existingIndex].date : new Date().toISOString().slice(0, 10))
 
 const post = {
   id: nextId,
@@ -82,21 +84,47 @@ function stripMetadata(body) {
 }
 
 function parseTags(value) {
-  if (!value) {
+  const values = Array.isArray(value) ? value : String(value || '').split(/,|\uFF0C/)
+
+  return values
+    .map((tag) => tag.trim())
+    .filter((tag) => tag && !['blog', 'blog-post', 'wontfix'].includes(tag.toLowerCase()))
+}
+
+function parseIssueLabels(value) {
+  try {
+    const labels = JSON.parse(value)
+    return Array.isArray(labels) ? labels : []
+  } catch {
     return []
   }
+}
 
-  return value
-    .split(/,|\uFF0C/)
-    .map((tag) => tag.trim())
-    .filter((tag) => tag && tag.toLowerCase() !== 'blog')
+function removeDuplicateTitle(markdown, title) {
+  const lines = markdown.replace(/\r\n/g, '\n').split('\n')
+  const firstContentIndex = lines.findIndex((line) => line.trim())
+
+  if (firstContentIndex >= 0) {
+    const heading = /^#\s+(.+)$/.exec(lines[firstContentIndex].trim())
+    if (heading && heading[1].trim() === title.trim()) {
+      lines.splice(firstContentIndex, 1)
+    }
+  }
+
+  return lines.join('\n').trim()
 }
 
 function firstPlainLine(body) {
-  return stripMetadata(body)
+  const line = stripMetadata(body)
     .split('\n')
-    .map((line) => line.replace(/^#+\s*/, '').trim())
-    .find(Boolean) || ''
+    .map((item) => item.trim())
+    .find((item) => item && !/^#+\s+/.test(item) && !/^<img\b/i.test(item)) || ''
+  const plain = line
+    .replace(/&(?:emsp|nbsp);/gi, '')
+    .replace(/\*\*|~~|`|\*/g, '')
+    .trim()
+
+  return plain.length > 80 ? `${plain.slice(0, 80)}…` : plain
 }
 
 function nextPostId(posts) {
@@ -160,11 +188,12 @@ function markdownToHtml(markdown) {
       continue
     }
 
-    const heading = /^(#{2,3})\s+(.+)$/.exec(line)
+    const heading = /^(#{1,3})\s+(.+)$/.exec(line)
     if (heading) {
       flushParagraph()
       flushList()
-      html.push(`<h${heading[1].length}>${inlineMarkdown(heading[2])}</h${heading[1].length}>`)
+      const level = Math.max(2, heading[1].length)
+      html.push(`<h${level}>${inlineMarkdown(heading[2])}</h${level}>`)
       continue
     }
 
@@ -190,7 +219,10 @@ function markdownToHtml(markdown) {
 
 function inlineMarkdown(text) {
   return escapeHtml(text)
+    .replace(/&amp;(emsp|nbsp);/gi, '&$1;')
     .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+    .replace(/~~(.+?)~~/g, '<s>$1</s>')
+    .replace(/(^|[^*])\*([^*]+)\*(?!\*)/g, '$1<em>$2</em>')
     .replace(/`([^`]+)`/g, '<code>$1</code>')
 }
 

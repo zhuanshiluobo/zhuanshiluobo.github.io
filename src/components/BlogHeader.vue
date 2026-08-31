@@ -5,7 +5,7 @@
   <header class="blog-header">
     <div class="header-inner">
       <router-link to="/" class="site-brand">
-        <img class="avatar" src="https://github.com/zhuanshiluobo.png" alt="avatar" />
+        <img class="avatar" src="/images/avatar.png" alt="zhuanshiluobo的头像" />
         <span class="site-title">zhuanshiluobo的博客</span>
       </router-link>
       <nav class="nav-links">
