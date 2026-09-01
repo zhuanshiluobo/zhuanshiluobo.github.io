@@ -112,5 +112,15 @@ export const posts = [
     summary: "梳理《游城拓荒》行动面板的设计目标、界面分区、按钮状态与弹窗逻辑，并细化角色牌、部署、调度、探索和城市移动等交互规则。",
     content: "\n      <p>本策划案围绕《游城拓荒》的行动面板系统，整理系统设计目的、界面与场景说明，以及快速行动、主要行动、按钮状态和弹窗交互规则。</p>\n      <div class=\"download-card\">\n        <strong>游城拓荒策划案-行动面板系统.xlsx</strong>\n        <span>原始 Excel 文档 · 约 3.40 MB</span>\n        <a\n          class=\"download-link\"\n          href=\"/downloads/you-cheng-tuo-huang-action-panel-system.xlsx\"\n          download=\"游城拓荒策划案-行动面板系统.xlsx\"\n        >下载完整文档</a>\n      </div>\n    ",
     tags: ["游城拓荒", "游戏开发"]
+  },
+  {
+    id: 14,
+    issueNumber: 15,
+    source: "https://github.com/zhuanshiluobo/zhuanshiluobo.github.io/issues/15",
+    title: "水~关于pr",
+    date: "2026-09-01T15:11:30Z",
+    summary: "今日天气：艳阳高照~",
+    content: "<p><strong><em>今日天气：艳阳高照</em>~</strong> ~下午：准备来场千针雨吗~</p>\n<h2>关于剪辑</h2>\n<p>&emsp;百度网盘限速，下个pr用了快一天，昨天早上挂着的下载刚结束。github上关于网盘的脚本和软件下了两三个，基本都用不了..以后有时间再查下相关资料吧。</p>\n<p>&emsp;不知道怎么剪辑，考虑下是否把隔壁曼波语音包拿来用？我的项目里音效一点没做，还得单独调个音轨。</p>\n<p>&emsp;沉迷堆叠大陆dlc中，少话，，，</p>\n<img src=\"https://github.com/user-attachments/assets/c1f0d4a4-cce4-45f3-9e18-526f13959aae\" alt=\"Image\" loading=\"lazy\">\n<p>&emsp;8h已通关，duang，文鸯文鸯文鸯真的不菜真的不菜啊。<strong><s>这宠物怎么这么难抽</s></strong></p>\n<img src=\"https://github.com/user-attachments/assets/2982480c-7e20-4239-9ae7-7bfd0004b5d7\" alt=\"Image\" loading=\"lazy\">\n<h2>等备案中</h2>\n<p>&emsp;等备案的第n+2天，昨天晚上找好心人测了一下，目前还处于打不开状态，安全组看了一眼放行的80和443，应该还是没备案的问题，还要七天继续等吧。</p>\n<p>&emsp;今日demo仅系统性修复，删了点旧实现、旧模型、旧测试，暂时按下不表。博客修改了一下首页和文章界面，纯手打无ai，古法查菜鸟教程css手打，匠心0.5年传承。<em><s>好歹我毕业前也是个前端糕手</s></em></p>",
+    tags: ["博客", "adobe"]
   }
 ]
