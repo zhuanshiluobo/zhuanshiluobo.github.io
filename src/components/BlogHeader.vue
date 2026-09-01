@@ -6,10 +6,11 @@
     <div class="header-inner">
       <router-link to="/" class="site-brand">
         <img class="avatar" src="/images/avatar.png" alt="zhuanshiluobo的头像" />
-        <span class="site-title">zhuanshiluobo的博客</span>
+        <span class="site-title">钻石萝卜的博客</span>
       </router-link>
       <nav class="nav-links">
         <router-link to="/">首页</router-link>
+        <router-link to="/paper">推文页面</router-link>
         <router-link to="/demo">Demo展示</router-link>
       </nav>
     </div>
@@ -24,12 +25,13 @@
 }
 
 .header-inner {
-  max-width: 800px;
+  max-width: 1000px;
+  min-width: 500px;
   margin: 0 auto;
   padding: 0 1rem;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 
 .site-brand {

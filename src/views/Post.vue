@@ -11,13 +11,13 @@ const post = computed(() => posts.find(p => p.id === Number(route.params.id)))
 const visibleTags = computed(() => (post.value?.tags || []).filter(tag => tag.toLowerCase() !== 'blog'))
 
 if (!post.value) {
-  router.replace('/')
+  router.replace('/paper')
 }
 </script>
 
 <template>
   <div class="post-detail" v-if="post">
-    <router-link to="/" class="back-link">&larr; 返回首页</router-link>
+    <router-link to="/paper" class="back-link">&larr; 返回推文页面</router-link>
     <article>
       <h1>{{ post.title }}</h1>
       <div class="post-meta">

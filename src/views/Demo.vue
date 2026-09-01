@@ -55,7 +55,7 @@ onUnmounted(() => {
 <template>
   <div class="demo-page">
     <section class="hero">
-      <h1>《游城拓荒：铸基者》线上模拟器</h1>
+      <h1>《游城拓荒》模拟器</h1>
 
       <section class="screenshots-section">
         <h2>游戏截图</h2>
@@ -135,9 +135,9 @@ onUnmounted(() => {
 
 <style scoped>
 .demo-page {
-  max-width: 1000px;
+  max-width: 800px;
   margin: 0 auto;
-  padding: 0 8rem;
+  padding: 0 1rem;
 }
 
 .hero {
