@@ -173,6 +173,14 @@ function markdownToHtml(markdown) {
   for (const rawLine of lines) {
     const line = rawLine.trimEnd()
 
+    const singleLineCode = /^(?:&emsp;\s*)?```(.*?)```$/.exec(line.trim())
+    if (!inCode && singleLineCode) {
+      flushParagraph()
+      flushList()
+      html.push(`<pre><code>${escapeHtml(singleLineCode[1])}</code></pre>`)
+      continue
+    }
+
     if (line.startsWith('```')) {
       if (inCode) {
         html.push(`<pre><code>${escapeHtml(code.join('\n'))}</code></pre>`)
