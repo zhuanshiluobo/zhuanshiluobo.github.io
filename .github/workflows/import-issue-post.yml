@@ -2,7 +2,7 @@ name: Import issue post
 
 on:
   issues:
-    types: [opened]
+    types: [opened,edited]
   workflow_dispatch:
     inputs:
       issue_number:
@@ -44,7 +44,7 @@ jobs:
           script: |
             const issue_number = Number(
               context.eventName === 'workflow_dispatch'
-                ? core.getInput('issue_number')
+                ? context.payload.inputs?.issue_number
                 : context.payload.issue.number
             )
             const { data: issue } = await github.rest.issues.get({
