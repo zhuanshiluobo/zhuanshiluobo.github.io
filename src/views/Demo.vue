@@ -88,8 +88,7 @@ onUnmounted(() => {
       </section>
 
       <div class="actions">
-        <a href="https://github.com/zhuanshiluobo/youchengtuohuang-frontier-simulator/releases/download/v0.3.0-alpha/youcheng-tuohuang-simulator-v0.3.0-alpha-windows-x64.zip"
-          class="primary">
+        <a href="/downloads/v0.4.2-alpha.zip" class="primary" download>
           下载 Windows Demo
         </a>
 
@@ -102,7 +101,7 @@ onUnmounted(() => {
       <div class="version-info">
         <div>
           <strong>当前版本</strong>
-          <span>v0.3.0-alpha</span>
+          <span>v0.4.2-alpha</span>
         </div>
         <div>
           <strong>支持平台</strong>
@@ -110,7 +109,7 @@ onUnmounted(() => {
         </div>
         <div>
           <strong>开发者备注</strong>
-          <span>联机功能内测中，后续将可以通过steam多人联机</span>
+          <span>联机功能可能存在bug，需要打开steam</span>
         </div>
       </div>
     </section>
@@ -118,8 +117,9 @@ onUnmounted(() => {
     <section class="section">
       <h2>试玩说明</h2>
       <ul>
-        <li>点击按钮下载demo或直接查看github获取最新版本</li>
-        <li>解压后运行tuohuang.exe或游程拓荒模拟器.exe。</li>
+        <li>点击按钮通过本站服务器下载 Demo，或前往 GitHub 查看项目。</li>
+        <li>解压后运行游城拓荒模拟器.exe。</li>
+        <li>目前尚未接入音效。</li>
       </ul>
     </section>
     <section class="section">
@@ -128,6 +128,7 @@ onUnmounted(() => {
         <li>3D 模型接入、地图俯视角</li>
         <li>手牌动画调优</li>
         <li>收藏室与成就系统</li>
+        <li>安装包由本站服务器提供下载，大小约 271 MB</li>
       </ul>
     </section>
   </div>
