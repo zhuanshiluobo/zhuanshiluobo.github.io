@@ -88,7 +88,7 @@ onUnmounted(() => {
       </section>
 
       <div class="actions">
-        <a href="/downloads/v0.4.2-alpha.zip" class="primary" download>
+        <a href="https://download.zhuanshiluobo.me/releases/v0.4.2-alpha.zip" class="primary">
           下载 Windows Demo
         </a>
 
