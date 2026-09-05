@@ -229,4 +229,85 @@ git revert <commit>     # 撤销某次提交</code></pre>
     ? context.payload.inputs?.issue_number
     : context.payload.issue.number
 )</code></pre>
-<p>&emsp;后续的话一个是继续加页面，堆router这套我熟，就是设计方面可能还得找点别的网站学习下，现在这个光秃秃的主页没什么美感可言。二一个是把可读文档上传到服务器自动构建新页面，这个只是有个想法还没想好怎么做，后续再议。</p>`,tags:[`adobe`,`呼呼呼`]}],Ac=new Intl.DateTimeFormat(`zh-CN`,{timeZone:`Asia/Shanghai`,year:`numeric`,month:`2-digit`,day:`2-digit`,hour:`2-digit`,minute:`2-digit`,second:`2-digit`,hour12:!1});function jc(e){return Ac.format(new Date(e)).replaceAll(`/`,`-`)}var Mc={key:0,class:`post-detail`},Nc={class:`post-meta`},Pc=[`datetime`],Fc={key:0,class:`tags`},Ic=[`innerHTML`],Lc=co({__name:`Post`,setup(e){let t=wc(),n=Cc(),r=Y(()=>kc.find(e=>e.id===Number(t.params.id))),i=Y(()=>(r.value?.tags||[]).filter(e=>e.toLowerCase()!==`blog`));return r.value||n.replace(`/paper`),(e,t)=>{let n=lr(`router-link`);return r.value?(W(),G(`div`,Mc,[q(n,{to:`/paper`,class:`back-link`},{default:Tn(()=>[...t[0]||=[Vi(`← 返回推文页面`,-1)]]),_:1}),K(`article`,null,[K(`h1`,null,A(r.value.title),1),K(`div`,Nc,[K(`time`,{datetime:r.value.date},A(Gt(jc)(r.value.date)),9,Pc),i.value.length?(W(),G(`span`,Fc,[(W(!0),G(H,null,pr(i.value,e=>(W(),G(`span`,{key:e,class:`tag`},A(e),1))),128))])):Ui(``,!0)]),K(`div`,{class:`post-content`,innerHTML:r.value.content},null,8,Ic)])])):Ui(``,!0)}}},[[`__scopeId`,`data-v-51436de2`]]),Rc={class:`demo-page`},zc={class:`hero`},Bc={class:`screenshots-section`},Vc={class:`carousel`},Hc={class:`carousel-image`},Uc=[`src`,`alt`],Wc={class:`carousel-caption`},Gc={class:`carousel-thumbnails`},Kc=[`aria-label`,`onClick`],qc=[`src`,`alt`],Jc=co({__name:`Demo`,setup(e){let t=[{src:`/images/page1.png`,alt:`入场页`,caption:`主页展示`},{src:`/images/page2.png`,alt:`加载中`,caption:`过场界面`},{src:`/images/page3.png`,alt:`卡片交互`,caption:`探索交互`},{src:`/images/page4.png`,alt:`影响地图`,caption:`采集资源`}],n=Vt(0),r=()=>{n.value=(n.value+1)%t.length},i=()=>{n.value=(n.value-1+t.length)%t.length},a=e=>{n.value=e},o;return $n(()=>{o=setInterval(r,5e3)}),rr(()=>{clearInterval(o)}),(e,o)=>(W(),G(`div`,Rc,[K(`section`,zc,[o[1]||=K(`h1`,null,`《游城拓荒》模拟器`,-1),K(`section`,Bc,[o[0]||=K(`h2`,null,`游戏截图`,-1),K(`div`,Vc,[K(`div`,Hc,[K(`img`,{src:t[n.value].src,alt:t[n.value].alt},null,8,Uc),K(`button`,{class:`carousel-button prev`,type:`button`,"aria-label":`上一张截图`,onClick:i},` ❮ `),K(`button`,{class:`carousel-button next`,type:`button`,"aria-label":`下一张截图`,onClick:r},` ❯ `)]),K(`p`,Wc,A(t[n.value].caption),1),K(`div`,Gc,[(W(),G(H,null,pr(t,(e,t)=>K(`button`,{key:e.src,type:`button`,class:k([`thumbnail`,{active:n.value===t}]),"aria-label":`查看第 ${t+1} 张截图`,onClick:e=>a(t)},[K(`img`,{src:e.src,alt:e.alt},null,8,qc)],10,Kc)),64))])])]),o[2]||=Hi(`<div class="actions" data-v-812de7b5><a href="https://download.zhuanshiluobo.me/releases/v0.4.2-alpha.zip" class="primary" data-v-812de7b5> 下载 Windows Demo </a><a href="https://github.com/zhuanshiluobo/youchengtuohuang-frontier-simulator" target="_blank" rel="noopener noreferrer" data-v-812de7b5> 查看项目 </a></div><div class="version-info" data-v-812de7b5><div data-v-812de7b5><strong data-v-812de7b5>当前版本</strong><span data-v-812de7b5>v0.4.2-alpha</span></div><div data-v-812de7b5><strong data-v-812de7b5>支持平台</strong><span data-v-812de7b5>Windows 64 位</span></div><div data-v-812de7b5><strong data-v-812de7b5>开发者备注</strong><span data-v-812de7b5>联机功能可能存在bug，需要打开steam</span></div></div>`,2)]),o[3]||=Hi(`<section class="section" data-v-812de7b5><h2 data-v-812de7b5>试玩说明</h2><ul data-v-812de7b5><li data-v-812de7b5>点击按钮通过本站服务器下载 Demo，或前往 GitHub 查看项目。</li><li data-v-812de7b5>解压后运行游城拓荒模拟器.exe。</li><li data-v-812de7b5>目前尚未接入音效。</li></ul></section><section class="section" data-v-812de7b5><h2 data-v-812de7b5>当前进度</h2><ul data-v-812de7b5><li data-v-812de7b5>3D 模型接入、地图俯视角</li><li data-v-812de7b5>手牌动画调优</li><li data-v-812de7b5>收藏室与成就系统</li><li data-v-812de7b5>安装包由本站服务器提供下载，大小约 271 MB</li></ul></section>`,2)]))}},[[`__scopeId`,`data-v-812de7b5`]]),Yc={class:`paper-page`},Xc={key:0,class:`empty`},Zc={class:`post-meta`},Qc=[`datetime`],$c={key:0,class:`tags`},el={class:`post-summary`},tl=[{path:`/`,name:`home`,component:Oc},{path:`/post/:id`,name:`post`,component:Lc},{path:`/demo`,name:`demo`,component:Jc},{path:`/paper`,name:`paper`,component:co({__name:`Paper`,setup(e){let t=[...kc].sort((e,t)=>new Date(t.date)-new Date(e.date)),n=e=>(e.tags||[]).filter(e=>e.toLowerCase()!==`blog`);return(e,r)=>{let i=lr(`router-link`);return W(),G(`div`,Yc,[r[1]||=K(`h2`,{class:`page-title`},`文章列表`,-1),Gt(t).length===0?(W(),G(`div`,Xc,`暂无文章`)):Ui(``,!0),(W(!0),G(H,null,pr(Gt(t),e=>(W(),G(`article`,{key:e.id,class:`post-card`},[q(i,{to:`/post/${e.id}`,class:`post-title-link`},{default:Tn(()=>[K(`h3`,null,A(e.title),1)]),_:2},1032,[`to`]),K(`div`,Zc,[K(`time`,{datetime:e.date},A(Gt(jc)(e.date)),9,Qc),n(e).length?(W(),G(`span`,$c,[(W(!0),G(H,null,pr(n(e),e=>(W(),G(`span`,{key:e,class:`tag`},A(e),1))),128))])):Ui(``,!0)]),K(`p`,el,A(e.summary),1),q(i,{to:`/post/${e.id}`,class:`read-more`},{default:Tn(()=>[...r[0]||=[Vi(`阅读全文 →`,-1)]]),_:1},8,[`to`])]))),128))])}}},[[`__scopeId`,`data-v-92933fae`]])}],nl=Sc({history:Us(),routes:tl});ao(xo).use(nl).mount(`#app`);
+<p>&emsp;后续的话一个是继续加页面，堆router这套我熟，就是设计方面可能还得找点别的网站学习下，现在这个光秃秃的主页没什么美感可言。二一个是把可读文档上传到服务器自动构建新页面，这个只是有个想法还没想好怎么做，后续再议。</p>`,tags:[`adobe`,`呼呼呼`]},{id:17,issueNumber:18,source:`https://github.com/zhuanshiluobo/zhuanshiluobo.github.io/issues/18`,title:`关于CDN和demo首曝反馈`,date:`2026-09-05T10:28:39Z`,summary:`今天早上一起床，看到b站私信发现博客链接没挂上，弹射起步开电脑改ing...`,content:`<h2>关于博客优化</h2>
+<p>&emsp;今天早上一起床，看到b站私信发现博客链接<em>没挂上</em>，弹射起步开电脑改ing...</p>
+<p>&emsp;改到一半突然发现就算改成了不还是走的git下载链接，那我不如顺手把连接方式也修成国内得了。一开始想的是走蓝奏云网盘这种直链下载，改代码试了一下不怎么满意，<em>其一</em>、蓝奏云无法上传100M以上文件。<em>其二</em>、我个人比较讨厌外部网站链接，会破坏博客整体连通性，也不方便后期维护。</p>
+<p>&emsp;最后敲定的方案是依旧走服务器，好处是方便监控流量走向的同时避免外部链接，坏处就是自付费和攻击的问题。<s><em>看不到就是没问题</em></s></p>
+<p>&emsp;fine，以下是根据最新最强的gpt6老师教学的操作步骤。</p>
+<h2>首次尝试</h2>
+<p>&emsp;首次尝试为了尽快恢复功能，暂时采取通过服务器下载，先使用xshell和xftp上传压缩包到新目录，验证完成后，重载nginx后发现打开显示为主页面，没有产生下载链接。</p>
+<p>&emsp;检查面板后发现下载的两个nginx冲突，通过xshell修改的nginx配置文件没有重载成功，再加上面板git处脚本没有设置npm的build，最终导致面板显示部署成功但页面未更新。</p>
+<p>&emsp;解决方案为停用旧nginx，重新在面板中修改修改deploy并重写自动化工作流，确保没有触发 Vue 的 SPA 回退规则，能拉取最新页面并成功使用下载链接。</p>
+<h2>OSS、CDN部署全流程</h2>
+<p>&emsp;本项目下一步的优化方向定为使用OSS对象存储，CDN内容分发，因此记录个人遇到的流程和问题 。</p>
+<p>&emsp;<em>OSS和CDN结合使用以实现更高效的内容分发和存储管理。通过CDN的域名访问OSS中的文件，CDN会将文件缓存到边缘节点，用户访问时直接从缓存中获取数据，从而提高访问速度，减少OSS的流量费用。</em></p>
+<p>+ 第一步：创建 OSS Bucket</p>
+<pre><code>对象存储 OSS → Bucket 列表 → 创建 Bucket</code></pre>
+<pre><code>点击进入bucket → 创建目录 → 上传文件</code></pre>
+<p>文件 ACL：选择“继承 Bucket” 域名：选择“外网域名”</p>
+<p>&emsp;接入OSS开启对象存储后，新建目录上传文件，在设置文件元数据中配置下载。 <em>点击上传的文件后向下拉：</em></p>
+<img src="https://github.com/user-attachments/assets/d78ef608-c958-49b9-baf9-8371c75dff93" alt="Image" loading="lazy">
+<p>这一步参考ai老师告诉你的做，我也不清楚如何填写个性化内容。</p>
+<p>+ 第二步：添加 CDN 加速域名</p>
+<pre><code>阿里云 CDN → 域名管理 → 添加域名</code></pre>
+<p>&emsp;接下来进入cdn控制台，开启后添加新的域名，注意首次添加需要验证归属，流程为前往dns服务台添加记录，按照给出的信息填写验证。</p>
+<img src="https://github.com/user-attachments/assets/298a36bc-1580-462b-8556-462fc18bfbbd" alt="Image" loading="lazy">
+<p>DNS解析验证入口：</p>
+<pre><code>云解析 DNS → 权威域名 → zhuanshiluobo.me → 解析设置 → 添加记录</code></pre>
+<p>+ 第三步：新增源站信息</p>
+<p>&emsp;在CDN页面打开刚刚新增的域名，在基础配置栏新增源站信息：</p>
+<img src="https://github.com/user-attachments/assets/656b43f6-fb2b-43dc-8352-719843404bbc" alt="Image" loading="lazy">
+<pre><code>源站信息：OSS 域名
+域名类型：自定义 OSS 源站
+优先级：主
+权重：10
+端口：443</code></pre>
+<p>+ 第四步：开启私有 Bucket 回源</p>
+<p>&emsp;根据提示把刚刚新增的域名添加入CDN后，修改回源配置。</p>
+<pre><code>阿里云OSS私有Bucket回源 → 打开 → 同账号回源</code></pre>
+<p>+ 第五步：配置 CNAME</p>
+<p>&emsp;CDN创建成功后，会分配一个CNAME，下一步为配置CNAME。</p>
+<img src="https://github.com/user-attachments/assets/5aa3ae66-e126-4c46-a674-030fa0c1048e" alt="Image" loading="lazy">
+<pre><code>云解析 DNS → zhuanshiluobo.me → 解析设置 → 添加记录</code></pre>
+<p>&emsp;具体的信息在CNAME配置页面已经给出，配置DNS与上文一致；完成后需要等待状态变为已配置，这一步大约需要10分钟，建议站起来活动一会。</p>
+<p>+ 第六步：配置 HTTPS</p>
+<p>&emsp;返回页签，配置https配置。</p>
+<pre><code>HTTPS配置 → HTTPS证书 → 打开HTTPS安全加速 → 添加ssl证书。</code></pre>
+<p>&emsp;<strong>注：这一步中，如果没有设置过网站SSL证书，则需要多走一步：</strong></p>
+<pre><code>数字证书管理服务 → 个人测试证书</code></pre>
+<p>方法同上。等待签发完成这一步大约需要一刻钟，可以再去喝杯水。</p>
+<p>&emsp;完成后选择数字证书管理添加https证书，这一步应该会直接出提示不要你填写。顺便在该页面内修改协议重定向为http-&gt;https。</p>
+<p>+ 第七步：配置 ZIP 缓存</p>
+<p>接下来都是一些网站的小配置，不需要各个页面跑来跑去当赛博办事处了。</p>
+<p>&emsp;配置如下：</p>
+<pre><code>类型：文件后缀名
+文件后缀：zip
+过期时间：30 天
+权重：90
+规则条件：不使用
+忽略源站不缓存头:关闭</code></pre>
+<p>+ 第八步：配置 Range 回源</p>
+<p>点击视频相关进入。</p>
+<pre><code>Range 回源：开启 Range 回源（大文件场景推荐）
+分片大小：1 MB
+规则条件：不使用</code></pre>
+<p>+ 第九步：设置流量限制</p>
+<pre><code>类型：流量封顶
+统计周期：当月
+阈值：100 GB
+解封时间：下月或手动启用</code></pre>
+<p>&emsp;<strong>🎉Congratulations！现在你可以通过oss/cdn下载文件了</strong>，只需要再敲敲代码把URL改为分发域名即可，若还有疑问请自行询问自己的ai老师，记得条件发全一点或者直接<strong>把本文甩给ai</strong>让他带你修改、提交、推送。</p>
+<p>&emsp;本次部署的300Mb压缩包文件，维护成本约为￥10/百次。</p>
+<h2>关于demo</h2>
+<p><s><em>时机已到，今日起兵！</em></s></p>
+<p>&emsp;终于是把第一版的宣传视频剪出来了，虽然做的依托但是效果还不错？感谢各位<strong>观众老爷</strong>，这个项目我自己觉得做的还是不太行的，没想到播放量居然破千了，<s>有种德不配位的感觉。</s></p>
+<p>&emsp;根据各种反馈，接下来的开发方向：</p>
+<p>+ 开发地图俯视与斜视的切换。<em>还有键盘移动</em></p>
+<p>+ 统一命名规范，根据官方文档统一描述。</p>
+<p>+ 开发四人本地玩法，即四人都由玩家操作，仅转移控制权。</p>
+<p>+ 重做整套完整UI，不再以线下桌游为准。<em>参考方舟动物园等已有作品</em>。</p>
+<p>+ 优化指引，降低理解难度，开发教学关<s>或者直接给个链接到视频</s>？<em>听说可以参考铁巢重炮</em>。</p>
+<p>+ <strong>修无穷无尽的bug。</strong></p>
+<p>&lt;h5&gt;以上，这两天燃尽了。</p>
+<p>&lt;h7&gt;哦，对了</p>
+<p>&lt;h5&gt;博客头部样式bug还没修...还有别忘了上供不然服务要停的</p>`,tags:[`更新`,`游城拓荒`,`博客`,`视频`]}],Ac=new Intl.DateTimeFormat(`zh-CN`,{timeZone:`Asia/Shanghai`,year:`numeric`,month:`2-digit`,day:`2-digit`,hour:`2-digit`,minute:`2-digit`,second:`2-digit`,hour12:!1});function jc(e){return Ac.format(new Date(e)).replaceAll(`/`,`-`)}var Mc={key:0,class:`post-detail`},Nc={class:`post-meta`},Pc=[`datetime`],Fc={key:0,class:`tags`},Ic=[`innerHTML`],Lc=co({__name:`Post`,setup(e){let t=wc(),n=Cc(),r=Y(()=>kc.find(e=>e.id===Number(t.params.id))),i=Y(()=>(r.value?.tags||[]).filter(e=>e.toLowerCase()!==`blog`));return r.value||n.replace(`/paper`),(e,t)=>{let n=lr(`router-link`);return r.value?(W(),G(`div`,Mc,[q(n,{to:`/paper`,class:`back-link`},{default:Tn(()=>[...t[0]||=[Vi(`← 返回推文页面`,-1)]]),_:1}),K(`article`,null,[K(`h1`,null,A(r.value.title),1),K(`div`,Nc,[K(`time`,{datetime:r.value.date},A(Gt(jc)(r.value.date)),9,Pc),i.value.length?(W(),G(`span`,Fc,[(W(!0),G(H,null,pr(i.value,e=>(W(),G(`span`,{key:e,class:`tag`},A(e),1))),128))])):Ui(``,!0)]),K(`div`,{class:`post-content`,innerHTML:r.value.content},null,8,Ic)])])):Ui(``,!0)}}},[[`__scopeId`,`data-v-51436de2`]]),Rc={class:`demo-page`},zc={class:`hero`},Bc={class:`screenshots-section`},Vc={class:`carousel`},Hc={class:`carousel-image`},Uc=[`src`,`alt`],Wc={class:`carousel-caption`},Gc={class:`carousel-thumbnails`},Kc=[`aria-label`,`onClick`],qc=[`src`,`alt`],Jc=co({__name:`Demo`,setup(e){let t=[{src:`/images/page1.png`,alt:`入场页`,caption:`主页展示`},{src:`/images/page2.png`,alt:`加载中`,caption:`过场界面`},{src:`/images/page3.png`,alt:`卡片交互`,caption:`探索交互`},{src:`/images/page4.png`,alt:`影响地图`,caption:`采集资源`}],n=Vt(0),r=()=>{n.value=(n.value+1)%t.length},i=()=>{n.value=(n.value-1+t.length)%t.length},a=e=>{n.value=e},o;return $n(()=>{o=setInterval(r,5e3)}),rr(()=>{clearInterval(o)}),(e,o)=>(W(),G(`div`,Rc,[K(`section`,zc,[o[1]||=K(`h1`,null,`《游城拓荒》模拟器`,-1),K(`section`,Bc,[o[0]||=K(`h2`,null,`游戏截图`,-1),K(`div`,Vc,[K(`div`,Hc,[K(`img`,{src:t[n.value].src,alt:t[n.value].alt},null,8,Uc),K(`button`,{class:`carousel-button prev`,type:`button`,"aria-label":`上一张截图`,onClick:i},` ❮ `),K(`button`,{class:`carousel-button next`,type:`button`,"aria-label":`下一张截图`,onClick:r},` ❯ `)]),K(`p`,Wc,A(t[n.value].caption),1),K(`div`,Gc,[(W(),G(H,null,pr(t,(e,t)=>K(`button`,{key:e.src,type:`button`,class:k([`thumbnail`,{active:n.value===t}]),"aria-label":`查看第 ${t+1} 张截图`,onClick:e=>a(t)},[K(`img`,{src:e.src,alt:e.alt},null,8,qc)],10,Kc)),64))])])]),o[2]||=Hi(`<div class="actions" data-v-812de7b5><a href="https://download.zhuanshiluobo.me/releases/v0.4.2-alpha.zip" class="primary" data-v-812de7b5> 下载 Windows Demo </a><a href="https://github.com/zhuanshiluobo/youchengtuohuang-frontier-simulator" target="_blank" rel="noopener noreferrer" data-v-812de7b5> 查看项目 </a></div><div class="version-info" data-v-812de7b5><div data-v-812de7b5><strong data-v-812de7b5>当前版本</strong><span data-v-812de7b5>v0.4.2-alpha</span></div><div data-v-812de7b5><strong data-v-812de7b5>支持平台</strong><span data-v-812de7b5>Windows 64 位</span></div><div data-v-812de7b5><strong data-v-812de7b5>开发者备注</strong><span data-v-812de7b5>联机功能可能存在bug，需要打开steam</span></div></div>`,2)]),o[3]||=Hi(`<section class="section" data-v-812de7b5><h2 data-v-812de7b5>试玩说明</h2><ul data-v-812de7b5><li data-v-812de7b5>点击按钮通过本站服务器下载 Demo，或前往 GitHub 查看项目。</li><li data-v-812de7b5>解压后运行游城拓荒模拟器.exe。</li><li data-v-812de7b5>目前尚未接入音效。</li></ul></section><section class="section" data-v-812de7b5><h2 data-v-812de7b5>当前进度</h2><ul data-v-812de7b5><li data-v-812de7b5>3D 模型接入、地图俯视角</li><li data-v-812de7b5>手牌动画调优</li><li data-v-812de7b5>收藏室与成就系统</li><li data-v-812de7b5>安装包由本站服务器提供下载，大小约 271 MB</li></ul></section>`,2)]))}},[[`__scopeId`,`data-v-812de7b5`]]),Yc={class:`paper-page`},Xc={key:0,class:`empty`},Zc={class:`post-meta`},Qc=[`datetime`],$c={key:0,class:`tags`},el={class:`post-summary`},tl=[{path:`/`,name:`home`,component:Oc},{path:`/post/:id`,name:`post`,component:Lc},{path:`/demo`,name:`demo`,component:Jc},{path:`/paper`,name:`paper`,component:co({__name:`Paper`,setup(e){let t=[...kc].sort((e,t)=>new Date(t.date)-new Date(e.date)),n=e=>(e.tags||[]).filter(e=>e.toLowerCase()!==`blog`);return(e,r)=>{let i=lr(`router-link`);return W(),G(`div`,Yc,[r[1]||=K(`h2`,{class:`page-title`},`文章列表`,-1),Gt(t).length===0?(W(),G(`div`,Xc,`暂无文章`)):Ui(``,!0),(W(!0),G(H,null,pr(Gt(t),e=>(W(),G(`article`,{key:e.id,class:`post-card`},[q(i,{to:`/post/${e.id}`,class:`post-title-link`},{default:Tn(()=>[K(`h3`,null,A(e.title),1)]),_:2},1032,[`to`]),K(`div`,Zc,[K(`time`,{datetime:e.date},A(Gt(jc)(e.date)),9,Qc),n(e).length?(W(),G(`span`,$c,[(W(!0),G(H,null,pr(n(e),e=>(W(),G(`span`,{key:e,class:`tag`},A(e),1))),128))])):Ui(``,!0)]),K(`p`,el,A(e.summary),1),q(i,{to:`/post/${e.id}`,class:`read-more`},{default:Tn(()=>[...r[0]||=[Vi(`阅读全文 →`,-1)]]),_:1},8,[`to`])]))),128))])}}},[[`__scopeId`,`data-v-92933fae`]])}],nl=Sc({history:Us(),routes:tl});ao(xo).use(nl).mount(`#app`);
