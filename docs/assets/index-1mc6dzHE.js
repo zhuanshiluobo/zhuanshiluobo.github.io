@@ -132,41 +132,41 @@ git revert <commit>     # 撤销某次提交</code></pre>
       <h2>碎碎念环节</h2>
       <p>&emsp;这个github.io的测试需求5我不是把issus关了吗怎么还能路由到，什么b问题我服了。</p>
       <p>&emsp;买个域名怎么备案这么久，还要8个工作日审核才能上线。</p>
-    `,tags:[`游城拓荒`,`更新`,`建模`]},{id:9,issueNumber:11,source:`https://github.com/zhuanshiluobo/zhuanshiluobo.github.io/issues/11`,title:`测试拖动到issues里的图片能否上传`,date:`2026-08-30T07:28:37Z`,summary:`测试图片能否上传`,content:`<p>测试图片能否上传</p>
-<img src="https://github.com/user-attachments/assets/b85160e3-ea6b-442d-84f9-c7a43e8dfbd3" alt="Image" loading="lazy">`,tags:[]},{id:10,issueNumber:12,source:`https://github.com/zhuanshiluobo/zhuanshiluobo.github.io/issues/12`,title:`博客上线`,date:`2026-08-30T15:01:27Z`,summary:`在搞备案的时候顺便搞了下SSL证书，nginx对于发布这一块确实厉害，就是宝塔面板和gpt下了两次导致中间排查问题了半小时，结果就是现在的宝塔面板上显示还是没有…`,content:`<p>&emsp;在搞备案的时候顺便搞了下SSL证书，nginx对于发布这一块确实厉害，就是宝塔面板和gpt下了两次导致中间排查问题了半小时，结果就是现在的宝塔面板上显示还是没有ssl，但是依然可以通过访问https往里进，就很奇怪，明明备案还没过的说。  不管怎么说现在国内总算是可以通过输入zhuanshiluobo.me访问了，<strong>可喜可贺可喜可贺</strong>。</p>
-<p>&emsp;我说真的现在的技术栈虽然我看得懂但是真的很菜，样式依托的同时还没给多少修改的空间，我迟早得重构整个页面，至少也得加个音乐播放器、动态背景和数据库，不然也太单调了。</p>
-<p>&emsp;bzw，linux确实比windows顺眼多了，至少在命令符上powershell和cmd还是太⑩了，报错成山。</p>
-<h2>demo开发</h2>
-<p>&emsp;想了下还是先把收藏室页面搞定了，这样也方便后续加奇奇怪怪的模型的时候可以先填进去，sol已经降智到分不清上下左右了，做个旋转的功能做了七八轮5h都耗完了也是人才，<strong>你最好是拿去训练gpt6才这样奥特曼。</strong></p>
-<img src="https://github.com/user-attachments/assets/25b0078a-809f-4ed3-b8e8-6bc7e10c6fb4" alt="Image" loading="lazy">
-<p>&emsp;明天得学习下光照相关的功能了，不然这个材质看着有点塑料，&emsp;<s>官方的源石其实也是塑料感满满</s>  也不方便后续其他的模型导入。</p>
-<p>&emsp;其实我感觉接下来除了继续处理动画还有什么可以优化的地方吗，还是说直接开始制作三人和二人的相关规则，这个有四人做参考应该没那么复杂，充其量搬下地图和适配下新的卡片效果，ai应该能自己跑出来&emsp;&emsp;<em>应该吧</em>。</p>`,tags:[`更新`,`游城拓荒`,`博客`]},{id:11,issueNumber:13,source:`https://github.com/zhuanshiluobo/zhuanshiluobo.github.io/issues/13`,title:`issues-bug`,date:`2026-08-30T15:13:28Z`,summary:`上线的时候看了一眼，我真没绷住哥们这sol靠不靠谱啊，什么叫上传issues的时候看一眼action，原来执行两次的bug修好了变成四次了？？`,content:`<p>&emsp;上线的时候看了一眼，我真没绷住哥们这sol靠不靠谱啊，什么叫上传issues的时候看一眼action，原来执行两次的bug修好了变成四次了？？</p>
-<p>&emsp;这降智真的无敌咯，已找到opus5中转，明天换hermes跑了。</p>
-<img src="https://github.com/user-attachments/assets/a9dae220-06b4-4ce7-9e3b-090f755c2255" alt="Image" loading="lazy">`,tags:[]},{id:12,issueNumber:14,source:`https://github.com/zhuanshiluobo/zhuanshiluobo.github.io/issues/14`,title:`关于修bug`,date:`2026-08-31T15:55:38Z`,summary:`也不知道哪里的问题，现在通过issues发布的md格式文档的时候转换器又坏了，现在md格式完全检测不出来，纯是字符串。`,content:`<h2>关于博客</h2>
+    `,tags:[`游城拓荒`,`更新`,`建模`]},{id:9,issueNumber:11,source:`https://github.com/zhuanshiluobo/zhuanshiluobo.github.io/issues/11`,title:`测试拖动到issues里的图片能否上传`,date:`2026-08-30T07:28:37Z`,summary:`测试图片能否上传`,content:`<p>测试图片能否上传
+<img src="https://github.com/user-attachments/assets/b85160e3-ea6b-442d-84f9-c7a43e8dfbd3" alt="Image" loading="lazy"></p>`,tags:[]},{id:10,issueNumber:12,source:`https://github.com/zhuanshiluobo/zhuanshiluobo.github.io/issues/12`,title:`博客上线`,date:`2026-08-30T15:01:27Z`,summary:`在搞备案的时候顺便搞了下SSL证书，nginx对于发布这一块确实厉害，就是宝塔面板和gpt下了两次导致中间排查问题了半小时，结果就是现在的宝塔面板上显示还是没有…`,content:`<p> 在搞备案的时候顺便搞了下SSL证书，nginx对于发布这一块确实厉害，就是宝塔面板和gpt下了两次导致中间排查问题了半小时，结果就是现在的宝塔面板上显示还是没有ssl，但是依然可以通过访问https往里进，就很奇怪，明明备案还没过的说。  不管怎么说现在国内总算是可以通过输入zhuanshiluobo.me访问了，<strong>可喜可贺可喜可贺</strong>。</p>
+<p> 我说真的现在的技术栈虽然我看得懂但是真的很菜，样式依托的同时还没给多少修改的空间，我迟早得重构整个页面，至少也得加个音乐播放器、动态背景和数据库，不然也太单调了。</p>
+<p> bzw，linux确实比windows顺眼多了，至少在命令符上powershell和cmd还是太⑩了，报错成山。</p>
+<h1>demo开发</h1>
+<p> 想了下还是先把收藏室页面搞定了，这样也方便后续加奇奇怪怪的模型的时候可以先填进去，sol已经降智到分不清上下左右了，做个旋转的功能做了七八轮5h都耗完了也是人才，<strong>你最好是拿去训练gpt6才这样奥特曼。</strong></p>
+<p><img src="https://github.com/user-attachments/assets/25b0078a-809f-4ed3-b8e8-6bc7e10c6fb4" alt="Image" loading="lazy"></p>
+<p> 明天得学习下光照相关的功能了，不然这个材质看着有点塑料， <s>官方的源石其实也是塑料感满满</s>  也不方便后续其他的模型导入。</p>
+<p> 其实我感觉接下来除了继续处理动画还有什么可以优化的地方吗，还是说直接开始制作三人和二人的相关规则，这个有四人做参考应该没那么复杂，充其量搬下地图和适配下新的卡片效果，ai应该能自己跑出来  <em>应该吧</em>。</p>`,tags:[`更新`,`游城拓荒`,`博客`]},{id:11,issueNumber:13,source:`https://github.com/zhuanshiluobo/zhuanshiluobo.github.io/issues/13`,title:`issues-bug`,date:`2026-08-30T15:13:28Z`,summary:`上线的时候看了一眼，我真没绷住哥们这sol靠不靠谱啊，什么叫上传issues的时候看一眼action，原来执行两次的bug修好了变成四次了？？`,content:`<p> 上线的时候看了一眼，我真没绷住哥们这sol靠不靠谱啊，什么叫上传issues的时候看一眼action，原来执行两次的bug修好了变成四次了？？</p>
+<p> 这降智真的无敌咯，已找到opus5中转，明天换hermes跑了。</p>
+<p><img src="https://github.com/user-attachments/assets/a9dae220-06b4-4ce7-9e3b-090f755c2255" alt="Image" loading="lazy"></p>`,tags:[]},{id:12,issueNumber:14,source:`https://github.com/zhuanshiluobo/zhuanshiluobo.github.io/issues/14`,title:`关于修bug`,date:`2026-08-31T15:55:38Z`,summary:`也不知道哪里的问题，现在通过issues发布的md格式文档的时候转换器又坏了，现在md格式完全检测不出来，纯是字符串。`,content:`<h1>关于博客</h1>
 <h2>新bug</h2>
-<p>&emsp;也不知道哪里的问题，现在通过issues发布的md格式文档的时候转换器又坏了，现在md格式完全检测不出来，纯是字符串。</p>
-<p>&emsp;66还有新bug，现在默认是从下到上日期越来越新，但是同一天发布的却反过来了，变成同一天新发布的在下面。找了半天还以为这个部署又出新bug了，修一下才发现原来是排序问题。</p>
-<p>&emsp;<strong>搞半天不还是得修。不过这个以后再说，目前不咋影响使用。</strong></p>
+<p> 也不知道哪里的问题，现在通过issues发布的md格式文档的时候转换器又坏了，现在md格式完全检测不出来，纯是字符串。</p>
+<p> 66还有新bug，现在默认是从下到上日期越来越新，但是同一天发布的却反过来了，变成同一天新发布的在下面。找了半天还以为这个部署又出新bug了，修一下才发现原来是排序问题。</p>
+<p> <strong>搞半天不还是得修。不过这个以后再说，目前不咋影响使用。</strong></p>
 <h2>新机制</h2>
-<p>&emsp;研究了三个小时的宝塔面板，跑到ssh里改的数据表才把master分支加上去，图形化界面虽然方便但出了问题也是真难改。</p>
-<p>&emsp;最后解决方案其实就是在宝塔页面的网站目录里<strong>把网站目录设置为git仓库地址，运行目录设置为网页构建</strong>的/docs文件夹，这样就能在正常使用nginx的npm run构建了。</p>
-<img src="https://github.com/user-attachments/assets/9152856e-5196-4c56-9cb9-c2b2af4ac005" alt="Image" loading="lazy">
-<p>&emsp;对了，不要忘记把防跨站功能关闭，这个在宝塔面板上修改目录的时候会自动给你打开，后续修改的时候会报错。<s>我不懂我瞎说的我感觉这玩意没用</s></p>
-<img src="https://github.com/user-attachments/assets/1b3a1858-56c1-4a0a-ba0b-2e81c5372c5c" alt="Image" loading="lazy">
-<h2>demo开发</h2>
+<p> 研究了三个小时的宝塔面板，跑到ssh里改的数据表才把master分支加上去，图形化界面虽然方便但出了问题也是真难改。</p>
+<p> 最后解决方案其实就是在宝塔页面的网站目录里<strong>把网站目录设置为git仓库地址，运行目录设置为网页构建</strong>的/docs文件夹，这样就能在正常使用nginx的npm run构建了。</p>
+<p><img src="https://github.com/user-attachments/assets/9152856e-5196-4c56-9cb9-c2b2af4ac005" alt="Image" loading="lazy"></p>
+<p> 对了，不要忘记把防跨站功能关闭，这个在宝塔面板上修改目录的时候会自动给你打开，后续修改的时候会报错。<s>我不懂我瞎说的我感觉这玩意没用</s></p>
+<p><img src="https://github.com/user-attachments/assets/1b3a1858-56c1-4a0a-ba0b-2e81c5372c5c" alt="Image" loading="lazy"></p>
+<h1>demo开发</h1>
 <h2>WebGL</h2>
-<p>&emsp;今天想制作一个能在vue博客页面直接玩的demo，结果搞了半天WebGL的调试，发现没有了ai报错如山，没办法只能继续丢给ai生成了，目前的原因是WebGL与steam服务冲突，也就是<strong>Steamworks.NET 不提供 WebGL 所需的 Steamworks 类型</strong>，要么注释掉<s>试过了要改的文件太多而且嵌套引用带来的问题多的要死</s>，要么重写个分支单独做。（这个目前在考虑做一下试试顺便练下怎么用steam desktop管理分支）</p>
-<p>&emsp;期待后续开发吧，这一块要改的不少。<em>或者可以直接拿牢版本单机用？</em></p>
+<p> 今天想制作一个能在vue博客页面直接玩的demo，结果搞了半天WebGL的调试，发现没有了ai报错如山，没办法只能继续丢给ai生成了，目前的原因是WebGL与steam服务冲突，也就是<strong><a href="http://Steamworks.NET" target="_blank" rel="noopener noreferrer">Steamworks.NET</a> 不提供 WebGL 所需的 Steamworks 类型</strong>，要么注释掉<s>试过了要改的文件太多而且嵌套引用带来的问题多的要死</s>，要么重写个分支单独做。（这个目前在考虑做一下试试顺便练下怎么用steam desktop管理分支）</p>
+<p> 期待后续开发吧，这一块要改的不少。<em>或者可以直接拿牢版本单机用？</em></p>
 <h2>手卡</h2>
-<p>&emsp;依旧手卡，依旧看不见就是做好了。打死我也想不到让手牌放置到待选区确认的方式是把手牌区的对应卡变成透明的这种解决方案，五张扇形手牌中间空一格说是。</p>
-<img src="https://github.com/user-attachments/assets/ddc3561e-dc9a-49f2-aeb1-f88b6a9cb0ea" alt="Image" loading="lazy">
+<p> 依旧手卡，依旧看不见就是做好了。打死我也想不到让手牌放置到待选区确认的方式是把手牌区的对应卡变成透明的这种解决方案，五张扇形手牌中间空一格说是。</p>
+<p><img src="https://github.com/user-attachments/assets/ddc3561e-dc9a-49f2-aeb1-f88b6a9cb0ea" alt="Image" loading="lazy"></p>
 <h3>优化</h3>
-<p>&emsp;更新拖动松手轨迹；更新收藏室让描述更加拟人；做了一个新的过场动画让不怎么需要加载的页面快速加载。<s>今天依旧没开始做多人适配。</s></p>
-<h2>新坑</h2>
-<p>&emsp;<s>我有一个绝妙的点子，可惜这里空间太小写不下。</s></p>
-<p>&emsp;wait 这里我想写多少写多少，哈哈。</p>
-<p>&emsp;我觉得堆叠大陆是个好玩的模式，正在思考和胡闹厨房like（类似多人联机派对）、模拟经营的结合体，感觉会很好玩，还适合搞成增量、挂机玩法和肉鸽玩法，不过一切等找到工作再说。</p>
-<p>&emsp;今天把手上的系统拆解案结了，明天写新的策划案试试，感觉现在这个没什么竞争力，而且写的也不多。</p>`,tags:[`enhancement`,`question`,`游城拓荒`,`博客`]},{id:13,title:`游城拓荒策划案：行动面板系统`,date:`2026-09-01`,summary:`梳理《游城拓荒》行动面板的设计目标、界面分区、按钮状态与弹窗逻辑，并细化角色牌、部署、调度、探索和城市移动等交互规则。`,content:`
+<p> 更新拖动松手轨迹；更新收藏室让描述更加拟人；做了一个新的过场动画让不怎么需要加载的页面快速加载。<s>今天依旧没开始做多人适配。</s></p>
+<h1>新坑</h1>
+<p> <s>我有一个绝妙的点子，可惜这里空间太小写不下。</s></p>
+<p> wait 这里我想写多少写多少，哈哈。</p>
+<p> 我觉得堆叠大陆是个好玩的模式，正在思考和胡闹厨房like（类似多人联机派对）、模拟经营的结合体，感觉会很好玩，还适合搞成增量、挂机玩法和肉鸽玩法，不过一切等找到工作再说。</p>
+<p> 今天把手上的系统拆解案结了，明天写新的策划案试试，感觉现在这个没什么竞争力，而且写的也不多。</p>`,tags:[`游城拓荒`,`博客`]},{id:13,title:`游城拓荒策划案：行动面板系统`,date:`2026-09-01`,summary:`梳理《游城拓荒》行动面板的设计目标、界面分区、按钮状态与弹窗逻辑，并细化角色牌、部署、调度、探索和城市移动等交互规则。`,content:`
       <p>本策划案围绕《游城拓荒》的行动面板系统，整理系统设计目的、界面与场景说明，以及快速行动、主要行动、按钮状态和弹窗交互规则。</p>
       <div class="download-card">
         <strong>游城拓荒策划案-行动面板系统.xlsx</strong>
@@ -177,137 +177,191 @@ git revert <commit>     # 撤销某次提交</code></pre>
           download="游城拓荒策划案-行动面板系统.xlsx"
         >下载完整文档</a>
       </div>
-    `,tags:[`游城拓荒`,`游戏开发`]},{id:14,issueNumber:15,source:`https://github.com/zhuanshiluobo/zhuanshiluobo.github.io/issues/15`,title:`水~关于pr`,date:`2026-09-01T15:11:30Z`,summary:`今日天气：艳阳高照~`,content:`<p><strong><em>今日天气：艳阳高照</em>~</strong> ~下午：准备来场千针雨吗~</p>
-<h2>关于剪辑</h2>
-<p>&emsp;百度网盘限速，下个pr用了快一天，昨天早上挂着的下载刚结束。github上关于网盘的脚本和软件下了两三个，基本都用不了..以后有时间再查下相关资料吧。</p>
-<p>&emsp;不知道怎么剪辑，考虑下是否把隔壁曼波语音包拿来用？我的项目里音效一点没做，还得单独调个音轨。</p>
-<p>&emsp;沉迷堆叠大陆dlc中，少话，，，</p>
-<img src="https://github.com/user-attachments/assets/c1f0d4a4-cce4-45f3-9e18-526f13959aae" alt="Image" loading="lazy">
-<p>&emsp;8h已通关，duang，文鸯文鸯文鸯真的不菜真的不菜啊。<strong><s>这宠物怎么这么难抽</s></strong></p>
-<img src="https://github.com/user-attachments/assets/2982480c-7e20-4239-9ae7-7bfd0004b5d7" alt="Image" loading="lazy">
-<h2>等备案中</h2>
-<p>&emsp;等备案的第n+2天，昨天晚上找好心人测了一下，目前还处于打不开状态，安全组看了一眼放行的80和443，应该还是没备案的问题，还要七天继续等吧。</p>
-<p>&emsp;今日demo仅系统性修复，删了点旧实现、旧模型、旧测试，暂时按下不表。博客修改了一下首页和文章界面，纯手打无ai，古法查菜鸟教程css手打，匠心0.5年传承。<em><s>好歹我毕业前也是个前端糕手</s></em></p>`,tags:[`博客`,`adobe`]},{id:15,issueNumber:16,source:`https://github.com/zhuanshiluobo/zhuanshiluobo.github.io/issues/16`,title:`关于备案后处理`,date:`2026-09-02T09:45:38Z`,summary:`等了好几天，备案终于通过了。核对的同时顺便整理下流程，方便后续其他想自己开网站的小灯们用。`,content:`<p>&emsp;等了好几天，备案终于通过了。核对的同时顺便整理下流程，方便后续其他想自己开网站的小灯们用。</p>
-<p>&emsp;本次流程使用<strong>阿里云服务器、阿里云购买域名</strong>；需要提前准备的照片资料包括：<em>身份证正反面照、手持身份证照、域名证书扫描件</em>，同时推荐打开的网站有<em>阿里云-域名与网站-域名管理-域名列表-基本信息</em> ，方便查询服务器信息。</p>
-<p>&emsp;<strong>第一步</strong>，备案通过后，阿里云会给你的手机发一条短信，也可以直接登录阿里云的备案页面，在审核进度窗口获取数据码（推荐），一个月有效期内前往<strong>全国互联网安全管理服务平台</strong>网站进行公安备案。</p>
-<pre><code>https://beian.mps.gov.cn/</code></pre>
-<p>&emsp;<strong>第二步</strong>，进入网站后，点击用户登录并先注册，注册完成后在业务办理-开办主体管理-新增主体的页面填写信息，完成后提交审核，会弹窗让你去网站业务继续下一步。</p>
+    `,tags:[`游城拓荒`,`游戏开发`]},{id:14,issueNumber:15,source:`https://github.com/zhuanshiluobo/zhuanshiluobo.github.io/issues/15`,title:`水~关于pr`,date:`2026-09-01T15:11:30Z`,summary:`今日天气：艳阳高照~`,content:`<p><strong><em>今日天气：艳阳高照</em>~</strong>
+~下午：准备来场千针雨吗~</p>
+<h1>关于剪辑</h1>
+<p> 百度网盘限速，下个pr用了快一天，昨天早上挂着的下载刚结束。github上关于网盘的脚本和软件下了两三个，基本都用不了..以后有时间再查下相关资料吧。</p>
+<p> 不知道怎么剪辑，考虑下是否把隔壁曼波语音包拿来用？我的项目里音效一点没做，还得单独调个音轨。</p>
+<p> 沉迷堆叠大陆dlc中，少话，，，
+<img src="https://github.com/user-attachments/assets/c1f0d4a4-cce4-45f3-9e18-526f13959aae" alt="Image" loading="lazy"></p>
+<p> 8h已通关，duang，文鸯文鸯文鸯真的不菜真的不菜啊。<strong><s>这宠物怎么这么难抽</s></strong>
+<img src="https://github.com/user-attachments/assets/2982480c-7e20-4239-9ae7-7bfd0004b5d7" alt="Image" loading="lazy"></p>
+<h1>等备案中</h1>
+<p> 等备案的第n+2天，昨天晚上找好心人测了一下，目前还处于打不开状态，安全组看了一眼放行的80和443，应该还是没备案的问题，还要七天继续等吧。</p>
+<p> 今日demo仅系统性修复，删了点旧实现、旧模型、旧测试，暂时按下不表。博客修改了一下首页和文章界面，纯手打无ai，古法查菜鸟教程css手打，匠心0.5年传承。<em><s>好歹我毕业前也是个前端糕手</s></em></p>`,tags:[`博客`,`adobe`]},{id:15,issueNumber:16,source:`https://github.com/zhuanshiluobo/zhuanshiluobo.github.io/issues/16`,title:`关于备案后处理`,date:`2026-09-02T09:45:38Z`,summary:`等了好几天，备案终于通过了。核对的同时顺便整理下流程，方便后续其他想自己开网站的小灯们用。`,content:`<p> 等了好几天，备案终于通过了。核对的同时顺便整理下流程，方便后续其他想自己开网站的小灯们用。</p>
+<p> 本次流程使用<strong>阿里云服务器、阿里云购买域名</strong>；需要提前准备的照片资料包括：<em>身份证正反面照、手持身份证照、域名证书扫描件</em>，同时推荐打开的网站有<em>阿里云-域名与网站-域名管理-域名列表-基本信息</em> ，方便查询服务器信息。</p>
+<p> <strong>第一步</strong>，备案通过后，阿里云会给你的手机发一条短信，也可以直接登录阿里云的备案页面，在审核进度窗口获取数据码（推荐），一个月有效期内前往<strong>全国互联网安全管理服务平台</strong>网站进行公安备案。</p>
+<p>  <code>https://beian.mps.gov.cn/</code></p>
+<p> <strong>第二步</strong>，进入网站后，点击用户登录并先注册，注册完成后在业务办理-开办主体管理-新增主体的页面填写信息，完成后提交审核，会弹窗让你去网站业务继续下一步。</p>
 <p><em>注：重新进入或点击页面右上角数据码，可以绑定数据码，这样方便读取主域名和备案号等信息。</em></p>
-<p>&emsp;<strong>第三步</strong>，前往网站业务-新办网站申请填写相关资料，结束后等待第二轮审核。</p>
-<p><em>题外话，阿里云会给注册域名的服务器免费延期，<strong>“备多久送多久”</strong>&emsp;</em></p>
-<p>&emsp;<strong>第？步</strong>，等待审核期间，没事干可以提前设置阿里云的云解析。域名解析的目的是让ip绑定域名，不用通过输入ip而是输入域名就可以访问网站。</p>
+<p> <strong>第三步</strong>，前往网站业务-新办网站申请填写相关资料，结束后等待第二轮审核。</p>
+<p><em>题外话，阿里云会给注册域名的服务器免费延期，<strong>“备多久送多久”</strong> </em></p>
+<p> <strong>第？步</strong>，等待审核期间，没事干可以提前设置阿里云的云解析。域名解析的目的是让ip绑定域名，不用通过输入ip而是输入域名就可以访问网站。</p>
 <p>可参考官方教程：</p>
-<pre><code>https://help.aliyun.com/zh/dns/pubz-add-website-parsing?spm=a2c4g.11186623.0.0.ff995e7bsR6STk</code></pre>
-<p>&emsp;<strong>第四步</strong>，完成备案后，需要在ICP备案成功的网站底部悬挂工信部下发的ICP备案号，并生成链接指向工信部网站:</p>
-<pre><code>beian.miit.gov.cn</code></pre>
-<p>&emsp;非经营性备案的悬挂备案号格式为省份简称+ICP备+数字编码+号。网站备案编号则会在主体备案编号的基础上，增加主体下备案的网站顺序。示例如下所示。</p>
-<p>&emsp;主体备案编号：浙ICP备123456号。</p>
-<p>&emsp;网站备案编号：浙ICP备123456号-1、京ICP备123456号-2等。</p>
-<p>&emsp;当然因为我们是自己写的网站，所以不得不使用敲代码的方式挂上去，这里给出示例代码：</p>
-<pre><code>&lt;a href=&quot;https://beian.miit.gov.cn/&quot; target=&quot;_blank&quot;&gt;您的备案号&lt;/a&gt;</code></pre>
-<pre><code>&lt;a href=&quot;https://beian.miit.gov.cn/&quot; target=&quot;_blank&quot;&gt;浙B2-20080101&lt;/a&gt;</code></pre>
-<p>&emsp;👆备案号改动后效果如上，当然也可以直接参考本网站下方的样式。</p>
-<p>&emsp;<strong>第？++步</strong>，我不知道某省需不需要挂版权所有，我先挂着再说👇。</p>
-<pre><code>&lt;p&gt;&amp;copy; 2026 zhuanshiluobo版权所有. &lt;/p&gt;</code></pre>
-<p>&emsp;至此，<strong>网站备案的基本完成</strong>，可以通过访问域名进入，不再拦截并弹出未备案通知。 &emsp;<strong>🎉Congratulations！🎉</strong></p>`,tags:[`博客`]},{id:16,issueNumber:17,source:`https://github.com/zhuanshiluobo/zhuanshiluobo.github.io/issues/17`,title:`关于呼呼呼和剪辑`,date:`2026-09-03T13:44:04Z`,summary:`抽呼呼呼抽了612+230才5+6/(ㄒoㄒ)/，粥大保底再旅到这来了说是。愤而学习pr把作战记录剪出来了。呼呼呼头发取色器色号是#CCBCEC`,content:`<p>&emsp;抽呼呼呼抽了612+230才5+6/(ㄒoㄒ)/<s>，粥大保底再旅到这来了说是。愤而学习pr把作战记录剪出来了。</s>呼呼呼头发取色器色号是#CCBCEC~~</p>
-<p>&emsp;ai太好用了你们知道吗，上github搜一个mcp，再上b站搜集几个入门教程，学下快捷键和最基础的缝合教程就够出片了，难搞的问题丢给ai自己做，做不出来的就古法查资料，挺不赖的。</p>
-<p>&emsp;<s>呼呼呼宝宝好胖好可爱😊好伟大的一张脸</s></p>
-<img src="https://github.com/user-attachments/assets/8b448d63-be1c-4356-994e-a48564aa9969" alt="Image" loading="lazy">
-<img src="https://github.com/user-attachments/assets/472ab31d-cb3d-4218-a72e-b2363759c3b8" alt="Image" loading="lazy">
-<img src="https://github.com/user-attachments/assets/d1e34c41-8ce6-4708-b22f-9a0e4b68c229" alt="Image" loading="lazy">
-<img src="https://github.com/user-attachments/assets/bd6d1391-c0f9-4ba3-aa12-c08bf5c4a6e1" alt="Image" loading="lazy">
-<img src="https://github.com/user-attachments/assets/fa73555d-2f81-4fa5-8c07-0db03b81fc5b" alt="Image" loading="lazy">
-<h2>中转相关问题</h2>
-<p>&emsp;今天的目标是搞定AxonHub的codex的中转接入，这是为了爽蹬sol的必要准备。</p>
-<p>&emsp;期间出现一个问题：codex-auto-review被截断了，所以要去cc switch里设置一下模型映射，为了省点流直接用5.6luna映射了，目前看来没什么问题。</p>
-<h2>demo、博客计划</h2>
-<p>&emsp;搞定了20x的接入和pr的基础操作之后，就可以准备<em>demo的宣发</em>了；准备是先录制一版实机的游玩视频，因为没有音效所以在考虑是否内置一个音乐播放器，最好是<strong>拿开源的直接用或者是网易云套皮</strong>，然后内置点粥的音乐。</p>
-<p>&emsp;另外现在有token了，可以尝试下构建webGL的版本，但是sol和我说现在最主要的事情是把手头的构建搞定。<s>叫什么形成一个可信的Windows版本</s>。整合了一下旧文档，还有老问题过度工程化导致的写死测试约束，这次一并改了。</p>
-<p>&emsp;<em>博客方面</em>昨天的issues推送有问题，导入器无法识别 Issue #16 中 \`\`\` 形式的单行代码块,已修复。另外issues修改后无法正常触发，触发了也会因为读取不到issues编号构建失败，这次推送一起修复了。</p>
+<pre><code>https://help.aliyun.com/zh/dns/pubz-add-website-parsing?spm=a2c4g.11186623.0.0.ff995e7bsR6STk
+</code></pre>
+<p> <strong>第四步</strong>，完成备案后，需要在ICP备案成功的网站底部悬挂工信部下发的ICP备案号，并生成链接指向工信部网站:</p>
+<pre><code>beian.miit.gov.cn
+</code></pre>
+<p> 非经营性备案的悬挂备案号格式为省份简称+ICP备+数字编码+号。网站备案编号则会在主体备案编号的基础上，增加主体下备案的网站顺序。示例如下所示。</p>
+<p> 主体备案编号：浙ICP备123456号。</p>
+<p> 网站备案编号：浙ICP备123456号-1、京ICP备123456号-2等。</p>
+<p> 当然因为我们是自己写的网站，所以不得不使用敲代码的方式挂上去，这里给出示例代码：</p>
+<pre><code>&lt;a href=&quot;https://beian.miit.gov.cn/&quot; target=&quot;_blank&quot;&gt;您的备案号&lt;/a&gt;
+</code></pre>
+<pre><code>&lt;a href=&quot;https://beian.miit.gov.cn/&quot; target=&quot;_blank&quot;&gt;浙B2-20080101&lt;/a&gt;
+</code></pre>
+<p> 👆备案号改动后效果如上，当然也可以直接参考本网站下方的样式。</p>
+<p> <strong>第？++步</strong>，我不知道某省需不需要挂版权所有，我先挂着再说👇。</p>
+<pre><code>&lt;p&gt;&amp;copy; 2026 zhuanshiluobo版权所有. &lt;/p&gt;
+</code></pre>
+<p> 至此，<strong>网站备案的基本完成</strong>，可以通过访问域名进入，不再拦截并弹出未备案通知。<br>
+ <strong>🎉Congratulations！🎉</strong></p>`,tags:[`博客`]},{id:16,issueNumber:17,source:`https://github.com/zhuanshiluobo/zhuanshiluobo.github.io/issues/17`,title:`关于呼呼呼和剪辑`,date:`2026-09-03T13:44:04Z`,summary:`抽呼呼呼抽了612+230才5+6/(ㄒoㄒ)/，粥大保底再旅到这来了说是。愤而学习pr把作战记录剪出来了。呼呼呼头发取色器色号是#CCBCEC`,content:`<p> 抽呼呼呼抽了612+230才5+6/(ㄒoㄒ)/~~，粥大保底再旅到这来了说是。愤而学习pr把作战记录剪出来了。<s>呼呼呼头发取色器色号是#CCBCEC</s></p>
+<p> ai太好用了你们知道吗，上github搜一个mcp，再上b站搜集几个入门教程，学下快捷键和最基础的缝合教程就够出片了，难搞的问题丢给ai自己做，做不出来的就古法查资料，挺不赖的。</p>
+<p> <s>呼呼呼宝宝好胖好可爱😊好伟大的一张脸</s></p>
+<p><img src="https://github.com/user-attachments/assets/8b448d63-be1c-4356-994e-a48564aa9969" alt="Image" loading="lazy"></p>
+<p><img src="https://github.com/user-attachments/assets/472ab31d-cb3d-4218-a72e-b2363759c3b8" alt="Image" loading="lazy"></p>
+<p><img src="https://github.com/user-attachments/assets/d1e34c41-8ce6-4708-b22f-9a0e4b68c229" alt="Image" loading="lazy"></p>
+<p><img src="https://github.com/user-attachments/assets/bd6d1391-c0f9-4ba3-aa12-c08bf5c4a6e1" alt="Image" loading="lazy"></p>
+<p><img src="https://github.com/user-attachments/assets/fa73555d-2f81-4fa5-8c07-0db03b81fc5b" alt="Image" loading="lazy"></p>
+<h1>中转相关问题</h1>
+<p> 今天的目标是搞定AxonHub的codex的中转接入，这是为了爽蹬sol的必要准备。</p>
+<p> 期间出现一个问题：codex-auto-review被截断了，所以要去cc switch里设置一下模型映射，为了省点流直接用5.6luna映射了，目前看来没什么问题。</p>
+<h1>demo、博客计划</h1>
+<p> 搞定了20x的接入和pr的基础操作之后，就可以准备<em>demo的宣发</em>了；准备是先录制一版实机的游玩视频，因为没有音效所以在考虑是否内置一个音乐播放器，最好是<strong>拿开源的直接用或者是网易云套皮</strong>，然后内置点粥的音乐。</p>
+<p> 另外现在有token了，可以尝试下构建webGL的版本，但是sol和我说现在最主要的事情是把手头的构建搞定。<s>叫什么形成一个可信的Windows版本</s>。整合了一下旧文档，还有老问题过度工程化导致的写死测试约束，这次一并改了。</p>
+<p> <em>博客方面</em>昨天的issues推送有问题，导入器无法识别 Issue #16 中 \`\`\` 形式的单行代码块,已修复。另外issues修改后无法正常触发，触发了也会因为读取不到issues编号构建失败，这次推送一起修复了。</p>
 <pre><code>const issue_number = Number(
   context.eventName === 'workflow_dispatch'
     ? context.payload.inputs?.issue_number
     : context.payload.issue.number
-)</code></pre>
-<p>&emsp;后续的话一个是继续加页面，堆router这套我熟，就是设计方面可能还得找点别的网站学习下，现在这个光秃秃的主页没什么美感可言。二一个是把可读文档上传到服务器自动构建新页面，这个只是有个想法还没想好怎么做，后续再议。</p>`,tags:[`adobe`,`呼呼呼`]},{id:17,issueNumber:18,source:`https://github.com/zhuanshiluobo/zhuanshiluobo.github.io/issues/18`,title:`关于CDN和demo首曝反馈`,date:`2026-09-05T10:28:39Z`,summary:`今天早上一起床，看到b站私信发现博客链接没挂上，弹射起步开电脑改ing...`,content:`<h2>关于博客优化</h2>
-<p>&emsp;今天早上一起床，看到b站私信发现博客链接<em>没挂上</em>，弹射起步开电脑改ing...</p>
-<p>&emsp;改到一半突然发现就算改成了不还是走的git下载链接，那我不如顺手把连接方式也修成国内得了。一开始想的是走蓝奏云网盘这种直链下载，改代码试了一下不怎么满意，<em>其一</em>、蓝奏云无法上传100M以上文件。<em>其二</em>、我个人比较讨厌外部网站链接，会破坏博客整体连通性，也不方便后期维护。</p>
-<p>&emsp;最后敲定的方案是依旧走服务器，好处是方便监控流量走向的同时避免外部链接，坏处就是自付费和攻击的问题。<s><em>看不到就是没问题</em></s></p>
-<p>&emsp;fine，以下是根据最新最强的gpt6老师教学的操作步骤。</p>
+)
+</code></pre>
+<p> 后续的话一个是继续加页面，堆router这套我熟，就是设计方面可能还得找点别的网站学习下，现在这个光秃秃的主页没什么美感可言。二一个是把可读文档上传到服务器自动构建新页面，这个只是有个想法还没想好怎么做，后续再议。</p>`,tags:[`adobe`,`呼呼呼`]},{id:17,issueNumber:18,source:`https://github.com/zhuanshiluobo/zhuanshiluobo.github.io/issues/18`,title:`关于CDN和demo首曝反馈`,date:`2026-09-05T10:28:39Z`,summary:`今天早上一起床，看到b站私信发现博客链接没挂上，弹射起步开电脑改ing...`,content:`<h1>关于博客优化</h1>
+<p> 今天早上一起床，看到b站私信发现博客链接<em>没挂上</em>，弹射起步开电脑改ing...</p>
+<p> 改到一半突然发现就算改成了不还是走的git下载链接，那我不如顺手把连接方式也修成国内得了。一开始想的是走蓝奏云网盘这种直链下载，改代码试了一下不怎么满意，<em>其一</em>、蓝奏云无法上传100M以上文件。<em>其二</em>、我个人比较讨厌外部网站链接，会破坏博客整体连通性，也不方便后期维护。</p>
+<p> 最后敲定的方案是依旧走服务器，好处是方便监控流量走向的同时避免外部链接，坏处就是自付费和攻击的问题。<s><em>看不到就是没问题</em></s></p>
+<p> fine，以下是根据最新最强的gpt6老师教学的操作步骤。</p>
 <h2>首次尝试</h2>
-<p>&emsp;首次尝试为了尽快恢复功能，暂时采取通过服务器下载，先使用xshell和xftp上传压缩包到新目录，验证完成后，重载nginx后发现打开显示为主页面，没有产生下载链接。</p>
-<p>&emsp;检查面板后发现下载的两个nginx冲突，通过xshell修改的nginx配置文件没有重载成功，再加上面板git处脚本没有设置npm的build，最终导致面板显示部署成功但页面未更新。</p>
-<p>&emsp;解决方案为停用旧nginx，重新在面板中修改修改deploy并重写自动化工作流，确保没有触发 Vue 的 SPA 回退规则，能拉取最新页面并成功使用下载链接。</p>
+<p> 首次尝试为了尽快恢复功能，暂时采取通过服务器下载，先使用xshell和xftp上传压缩包到新目录，验证完成后，重载nginx后发现打开显示为主页面，没有产生下载链接。</p>
+<p> 检查面板后发现下载的两个nginx冲突，通过xshell修改的nginx配置文件没有重载成功，再加上面板git处脚本没有设置npm的build，最终导致面板显示部署成功但页面未更新。</p>
+<p> 解决方案为停用旧nginx，重新在面板中修改修改deploy并重写自动化工作流，确保没有触发 Vue 的 SPA 回退规则，能拉取最新页面并成功使用下载链接。</p>
 <h2>OSS、CDN部署全流程</h2>
-<p>&emsp;本项目下一步的优化方向定为使用OSS对象存储，CDN内容分发，因此记录个人遇到的流程和问题 。</p>
-<p>&emsp;<em>OSS和CDN结合使用以实现更高效的内容分发和存储管理。通过CDN的域名访问OSS中的文件，CDN会将文件缓存到边缘节点，用户访问时直接从缓存中获取数据，从而提高访问速度，减少OSS的流量费用。</em></p>
-<p>+ 第一步：创建 OSS Bucket</p>
-<pre><code>对象存储 OSS → Bucket 列表 → 创建 Bucket</code></pre>
-<pre><code>点击进入bucket → 创建目录 → 上传文件</code></pre>
-<p>文件 ACL：选择“继承 Bucket” 域名：选择“外网域名”</p>
-<p>&emsp;接入OSS开启对象存储后，新建目录上传文件，在设置文件元数据中配置下载。 <em>点击上传的文件后向下拉：</em></p>
-<img src="https://github.com/user-attachments/assets/d78ef608-c958-49b9-baf9-8371c75dff93" alt="Image" loading="lazy">
+<p> 本项目下一步的优化方向定为使用OSS对象存储，CDN内容分发，因此记录个人遇到的流程和问题 。</p>
+<p> <em>OSS和CDN结合使用以实现更高效的内容分发和存储管理。通过CDN的域名访问OSS中的文件，CDN会将文件缓存到边缘节点，用户访问时直接从缓存中获取数据，从而提高访问速度，减少OSS的流量费用。</em></p>
+<ul>
+<li>第一步：创建 OSS Bucket</li>
+</ul>
+<pre><code>对象存储 OSS → Bucket 列表 → 创建 Bucket
+</code></pre>
+<pre><code>点击进入bucket → 创建目录 → 上传文件
+</code></pre>
+<p>文件 ACL：选择“继承 Bucket”
+域名：选择“外网域名”</p>
+<p> 接入OSS开启对象存储后，新建目录上传文件，在设置文件元数据中配置下载。
+<em>点击上传的文件后向下拉：</em>
+<img src="https://github.com/user-attachments/assets/d78ef608-c958-49b9-baf9-8371c75dff93" alt="Image" loading="lazy"></p>
 <p>这一步参考ai老师告诉你的做，我也不清楚如何填写个性化内容。</p>
-<p>+ 第二步：添加 CDN 加速域名</p>
-<pre><code>阿里云 CDN → 域名管理 → 添加域名</code></pre>
-<p>&emsp;接下来进入cdn控制台，开启后添加新的域名，注意首次添加需要验证归属，流程为前往dns服务台添加记录，按照给出的信息填写验证。</p>
-<img src="https://github.com/user-attachments/assets/298a36bc-1580-462b-8556-462fc18bfbbd" alt="Image" loading="lazy">
+<ul>
+<li>第二步：添加 CDN 加速域名</li>
+</ul>
+<pre><code>阿里云 CDN → 域名管理 → 添加域名
+</code></pre>
+<p> 接下来进入cdn控制台，开启后添加新的域名，注意首次添加需要验证归属，流程为前往dns服务台添加记录，按照给出的信息填写验证。</p>
+<p><img src="https://github.com/user-attachments/assets/298a36bc-1580-462b-8556-462fc18bfbbd" alt="Image" loading="lazy"></p>
 <p>DNS解析验证入口：</p>
-<pre><code>云解析 DNS → 权威域名 → zhuanshiluobo.me → 解析设置 → 添加记录</code></pre>
-<p>+ 第三步：新增源站信息</p>
-<p>&emsp;在CDN页面打开刚刚新增的域名，在基础配置栏新增源站信息：</p>
-<img src="https://github.com/user-attachments/assets/656b43f6-fb2b-43dc-8352-719843404bbc" alt="Image" loading="lazy">
+<pre><code>云解析 DNS → 权威域名 → zhuanshiluobo.me → 解析设置 → 添加记录
+</code></pre>
+<ul>
+<li>第三步：新增源站信息</li>
+</ul>
+<p> 在CDN页面打开刚刚新增的域名，在基础配置栏新增源站信息：</p>
+<p><img src="https://github.com/user-attachments/assets/656b43f6-fb2b-43dc-8352-719843404bbc" alt="Image" loading="lazy"></p>
 <pre><code>源站信息：OSS 域名
 域名类型：自定义 OSS 源站
 优先级：主
 权重：10
-端口：443</code></pre>
-<p>+ 第四步：开启私有 Bucket 回源</p>
-<p>&emsp;根据提示把刚刚新增的域名添加入CDN后，修改回源配置。</p>
-<pre><code>阿里云OSS私有Bucket回源 → 打开 → 同账号回源</code></pre>
-<p>+ 第五步：配置 CNAME</p>
-<p>&emsp;CDN创建成功后，会分配一个CNAME，下一步为配置CNAME。</p>
-<img src="https://github.com/user-attachments/assets/5aa3ae66-e126-4c46-a674-030fa0c1048e" alt="Image" loading="lazy">
-<pre><code>云解析 DNS → zhuanshiluobo.me → 解析设置 → 添加记录</code></pre>
-<p>&emsp;具体的信息在CNAME配置页面已经给出，配置DNS与上文一致；完成后需要等待状态变为已配置，这一步大约需要10分钟，建议站起来活动一会。</p>
-<p>+ 第六步：配置 HTTPS</p>
-<p>&emsp;返回页签，配置https配置。</p>
-<pre><code>HTTPS配置 → HTTPS证书 → 打开HTTPS安全加速 → 添加ssl证书。</code></pre>
-<p>&emsp;<strong>注：这一步中，如果没有设置过网站SSL证书，则需要多走一步：</strong></p>
-<pre><code>数字证书管理服务 → 个人测试证书</code></pre>
+端口：443
+</code></pre>
+<ul>
+<li>第四步：开启私有 Bucket 回源</li>
+</ul>
+<p> 根据提示把刚刚新增的域名添加入CDN后，修改回源配置。</p>
+<pre><code>阿里云OSS私有Bucket回源 → 打开 → 同账号回源
+</code></pre>
+<ul>
+<li>第五步：配置 CNAME</li>
+</ul>
+<p> CDN创建成功后，会分配一个CNAME，下一步为配置CNAME。</p>
+<p><img src="https://github.com/user-attachments/assets/5aa3ae66-e126-4c46-a674-030fa0c1048e" alt="Image" loading="lazy"></p>
+<pre><code>云解析 DNS → zhuanshiluobo.me → 解析设置 → 添加记录
+</code></pre>
+<p> 具体的信息在CNAME配置页面已经给出，配置DNS与上文一致；完成后需要等待状态变为已配置，这一步大约需要10分钟，建议站起来活动一会。</p>
+<ul>
+<li>第六步：配置 HTTPS</li>
+</ul>
+<p> 返回页签，配置https配置。</p>
+<pre><code>HTTPS配置 → HTTPS证书 → 打开HTTPS安全加速 → 添加ssl证书。
+</code></pre>
+<p> <strong>注：这一步中，如果没有设置过网站SSL证书，则需要多走一步：</strong></p>
+<pre><code>数字证书管理服务 → 个人测试证书
+</code></pre>
 <p>方法同上。等待签发完成这一步大约需要一刻钟，可以再去喝杯水。</p>
-<p>&emsp;完成后选择数字证书管理添加https证书，这一步应该会直接出提示不要你填写。顺便在该页面内修改协议重定向为http-&gt;https。</p>
-<p>+ 第七步：配置 ZIP 缓存</p>
+<p> 完成后选择数字证书管理添加https证书，这一步应该会直接出提示不要你填写。顺便在该页面内修改协议重定向为http-&gt;https。</p>
+<ul>
+<li>第七步：配置 ZIP 缓存</li>
+</ul>
 <p>接下来都是一些网站的小配置，不需要各个页面跑来跑去当赛博办事处了。</p>
-<p>&emsp;配置如下：</p>
+<p> 配置如下：</p>
 <pre><code>类型：文件后缀名
 文件后缀：zip
 过期时间：30 天
 权重：90
 规则条件：不使用
-忽略源站不缓存头:关闭</code></pre>
-<p>+ 第八步：配置 Range 回源</p>
+忽略源站不缓存头:关闭
+</code></pre>
+<ul>
+<li>第八步：配置 Range 回源</li>
+</ul>
 <p>点击视频相关进入。</p>
 <pre><code>Range 回源：开启 Range 回源（大文件场景推荐）
 分片大小：1 MB
-规则条件：不使用</code></pre>
-<p>+ 第九步：设置流量限制</p>
+规则条件：不使用
+</code></pre>
+<ul>
+<li>第九步：设置流量限制</li>
+</ul>
 <pre><code>类型：流量封顶
 统计周期：当月
 阈值：100 GB
-解封时间：下月或手动启用</code></pre>
-<p>&emsp;<strong>🎉Congratulations！现在你可以通过oss/cdn下载文件了</strong>，只需要再敲敲代码把URL改为分发域名即可，若还有疑问请自行询问自己的ai老师，记得条件发全一点或者直接<strong>把本文甩给ai</strong>让他带你修改、提交、推送。</p>
-<p>&emsp;本次部署的300Mb压缩包文件，维护成本约为￥10/百次。</p>
-<h2>关于demo</h2>
+解封时间：下月或手动启用
+</code></pre>
+<p> <strong>🎉Congratulations！现在你可以通过oss/cdn下载文件了</strong>，只需要再敲敲代码把URL改为分发域名即可，若还有疑问请自行询问自己的ai老师，记得条件发全一点或者直接<strong>把本文甩给ai</strong>让他带你修改、提交、推送。</p>
+<p> 本次部署的300Mb压缩包文件，维护成本约为￥10/百次。</p>
+<h1>关于demo</h1>
 <p><s><em>时机已到，今日起兵！</em></s></p>
-<p>&emsp;终于是把第一版的宣传视频剪出来了，虽然做的依托但是效果还不错？感谢各位<strong>观众老爷</strong>，这个项目我自己觉得做的还是不太行的，没想到播放量居然破千了，<s>有种德不配位的感觉。</s></p>
-<p>&emsp;根据各种反馈，接下来的开发方向：</p>
-<p>+ 开发地图俯视与斜视的切换。<em>还有键盘移动</em></p>
-<p>+ 统一命名规范，根据官方文档统一描述。</p>
-<p>+ 开发四人本地玩法，即四人都由玩家操作，仅转移控制权。</p>
-<p>+ 重做整套完整UI，不再以线下桌游为准。<em>参考方舟动物园等已有作品</em>。</p>
-<p>+ 优化指引，降低理解难度，开发教学关<s>或者直接给个链接到视频</s>？<em>听说可以参考铁巢重炮</em>。</p>
-<p>+ <strong>修无穷无尽的bug。</strong></p>
-<p>&lt;h5&gt;以上，这两天燃尽了。</p>
-<p>&lt;h7&gt;哦，对了</p>
-<p>&lt;h5&gt;博客头部样式bug还没修...还有别忘了上供不然服务要停的</p>`,tags:[`更新`,`游城拓荒`,`博客`,`视频`]}],Ac=new Intl.DateTimeFormat(`zh-CN`,{timeZone:`Asia/Shanghai`,year:`numeric`,month:`2-digit`,day:`2-digit`,hour:`2-digit`,minute:`2-digit`,second:`2-digit`,hour12:!1});function jc(e){return Ac.format(new Date(e)).replaceAll(`/`,`-`)}var Mc={key:0,class:`post-detail`},Nc={class:`post-meta`},Pc=[`datetime`],Fc={key:0,class:`tags`},Ic=[`innerHTML`],Lc=co({__name:`Post`,setup(e){let t=wc(),n=Cc(),r=Y(()=>kc.find(e=>e.id===Number(t.params.id))),i=Y(()=>(r.value?.tags||[]).filter(e=>e.toLowerCase()!==`blog`));return r.value||n.replace(`/paper`),(e,t)=>{let n=lr(`router-link`);return r.value?(W(),G(`div`,Mc,[q(n,{to:`/paper`,class:`back-link`},{default:Tn(()=>[...t[0]||=[Vi(`← 返回推文页面`,-1)]]),_:1}),K(`article`,null,[K(`h1`,null,A(r.value.title),1),K(`div`,Nc,[K(`time`,{datetime:r.value.date},A(Gt(jc)(r.value.date)),9,Pc),i.value.length?(W(),G(`span`,Fc,[(W(!0),G(H,null,pr(i.value,e=>(W(),G(`span`,{key:e,class:`tag`},A(e),1))),128))])):Ui(``,!0)]),K(`div`,{class:`post-content`,innerHTML:r.value.content},null,8,Ic)])])):Ui(``,!0)}}},[[`__scopeId`,`data-v-51436de2`]]),Rc={class:`demo-page`},zc={class:`hero`},Bc={class:`screenshots-section`},Vc={class:`carousel`},Hc={class:`carousel-image`},Uc=[`src`,`alt`],Wc={class:`carousel-caption`},Gc={class:`carousel-thumbnails`},Kc=[`aria-label`,`onClick`],qc=[`src`,`alt`],Jc=co({__name:`Demo`,setup(e){let t=[{src:`/images/page1.png`,alt:`入场页`,caption:`主页展示`},{src:`/images/page2.png`,alt:`加载中`,caption:`过场界面`},{src:`/images/page3.png`,alt:`卡片交互`,caption:`探索交互`},{src:`/images/page4.png`,alt:`影响地图`,caption:`采集资源`}],n=Vt(0),r=()=>{n.value=(n.value+1)%t.length},i=()=>{n.value=(n.value-1+t.length)%t.length},a=e=>{n.value=e},o;return $n(()=>{o=setInterval(r,5e3)}),rr(()=>{clearInterval(o)}),(e,o)=>(W(),G(`div`,Rc,[K(`section`,zc,[o[1]||=K(`h1`,null,`《游城拓荒》模拟器`,-1),K(`section`,Bc,[o[0]||=K(`h2`,null,`游戏截图`,-1),K(`div`,Vc,[K(`div`,Hc,[K(`img`,{src:t[n.value].src,alt:t[n.value].alt},null,8,Uc),K(`button`,{class:`carousel-button prev`,type:`button`,"aria-label":`上一张截图`,onClick:i},` ❮ `),K(`button`,{class:`carousel-button next`,type:`button`,"aria-label":`下一张截图`,onClick:r},` ❯ `)]),K(`p`,Wc,A(t[n.value].caption),1),K(`div`,Gc,[(W(),G(H,null,pr(t,(e,t)=>K(`button`,{key:e.src,type:`button`,class:k([`thumbnail`,{active:n.value===t}]),"aria-label":`查看第 ${t+1} 张截图`,onClick:e=>a(t)},[K(`img`,{src:e.src,alt:e.alt},null,8,qc)],10,Kc)),64))])])]),o[2]||=Hi(`<div class="actions" data-v-812de7b5><a href="https://download.zhuanshiluobo.me/releases/v0.4.2-alpha.zip" class="primary" data-v-812de7b5> 下载 Windows Demo </a><a href="https://github.com/zhuanshiluobo/youchengtuohuang-frontier-simulator" target="_blank" rel="noopener noreferrer" data-v-812de7b5> 查看项目 </a></div><div class="version-info" data-v-812de7b5><div data-v-812de7b5><strong data-v-812de7b5>当前版本</strong><span data-v-812de7b5>v0.4.2-alpha</span></div><div data-v-812de7b5><strong data-v-812de7b5>支持平台</strong><span data-v-812de7b5>Windows 64 位</span></div><div data-v-812de7b5><strong data-v-812de7b5>开发者备注</strong><span data-v-812de7b5>联机功能可能存在bug，需要打开steam</span></div></div>`,2)]),o[3]||=Hi(`<section class="section" data-v-812de7b5><h2 data-v-812de7b5>试玩说明</h2><ul data-v-812de7b5><li data-v-812de7b5>点击按钮通过本站服务器下载 Demo，或前往 GitHub 查看项目。</li><li data-v-812de7b5>解压后运行游城拓荒模拟器.exe。</li><li data-v-812de7b5>目前尚未接入音效。</li></ul></section><section class="section" data-v-812de7b5><h2 data-v-812de7b5>当前进度</h2><ul data-v-812de7b5><li data-v-812de7b5>3D 模型接入、地图俯视角</li><li data-v-812de7b5>手牌动画调优</li><li data-v-812de7b5>收藏室与成就系统</li><li data-v-812de7b5>安装包由本站服务器提供下载，大小约 271 MB</li></ul></section>`,2)]))}},[[`__scopeId`,`data-v-812de7b5`]]),Yc={class:`paper-page`},Xc={key:0,class:`empty`},Zc={class:`post-meta`},Qc=[`datetime`],$c={key:0,class:`tags`},el={class:`post-summary`},tl=[{path:`/`,name:`home`,component:Oc},{path:`/post/:id`,name:`post`,component:Lc},{path:`/demo`,name:`demo`,component:Jc},{path:`/paper`,name:`paper`,component:co({__name:`Paper`,setup(e){let t=[...kc].sort((e,t)=>new Date(t.date)-new Date(e.date)),n=e=>(e.tags||[]).filter(e=>e.toLowerCase()!==`blog`);return(e,r)=>{let i=lr(`router-link`);return W(),G(`div`,Yc,[r[1]||=K(`h2`,{class:`page-title`},`文章列表`,-1),Gt(t).length===0?(W(),G(`div`,Xc,`暂无文章`)):Ui(``,!0),(W(!0),G(H,null,pr(Gt(t),e=>(W(),G(`article`,{key:e.id,class:`post-card`},[q(i,{to:`/post/${e.id}`,class:`post-title-link`},{default:Tn(()=>[K(`h3`,null,A(e.title),1)]),_:2},1032,[`to`]),K(`div`,Zc,[K(`time`,{datetime:e.date},A(Gt(jc)(e.date)),9,Qc),n(e).length?(W(),G(`span`,$c,[(W(!0),G(H,null,pr(n(e),e=>(W(),G(`span`,{key:e,class:`tag`},A(e),1))),128))])):Ui(``,!0)]),K(`p`,el,A(e.summary),1),q(i,{to:`/post/${e.id}`,class:`read-more`},{default:Tn(()=>[...r[0]||=[Vi(`阅读全文 →`,-1)]]),_:1},8,[`to`])]))),128))])}}},[[`__scopeId`,`data-v-92933fae`]])}],nl=Sc({history:Us(),routes:tl});ao(xo).use(nl).mount(`#app`);
+<p> 终于是把第一版的宣传视频剪出来了，虽然做的依托但是效果还不错？感谢各位<strong>观众老爷</strong>，这个项目我自己觉得做的还是不太行的，没想到播放量居然破千了，<s>有种德不配位的感觉。</s></p>
+<p> 根据各种反馈，接下来的开发方向：</p>
+<ul>
+<li>
+<p>开发地图俯视与斜视的切换。<em>还有键盘移动</em></p>
+</li>
+<li>
+<p>统一命名规范，根据官方文档统一描述。</p>
+</li>
+<li>
+<p>开发四人本地玩法，即四人都由玩家操作，仅转移控制权。</p>
+</li>
+<li>
+<p>重做整套完整UI，不再以线下桌游为准。<em>参考方舟动物园等已有作品</em>。</p>
+</li>
+<li>
+<p>优化指引，降低理解难度，开发教学关<s>或者直接给个链接到视频</s>？<em>听说可以参考铁巢重炮</em>。</p>
+</li>
+<li>
+<p><strong>修无穷无尽的bug。</strong></p>
+</li>
+</ul>
+<h5>以上，这两天燃尽了。</h5>
+<h6>哦，对了</h6>
+<h5>博客头部样式bug还没修...还有别忘了上供不然服务要停的</h5>`,tags:[`更新`,`游城拓荒`,`博客`,`视频`]}],Ac=new Intl.DateTimeFormat(`zh-CN`,{timeZone:`Asia/Shanghai`,year:`numeric`,month:`2-digit`,day:`2-digit`,hour:`2-digit`,minute:`2-digit`,second:`2-digit`,hour12:!1});function jc(e){return Ac.format(new Date(e)).replaceAll(`/`,`-`)}var Mc={key:0,class:`post-detail`},Nc={class:`post-meta`},Pc=[`datetime`],Fc={key:0,class:`tags`},Ic=[`innerHTML`],Lc=co({__name:`Post`,setup(e){let t=wc(),n=Cc(),r=Y(()=>kc.find(e=>e.id===Number(t.params.id))),i=Y(()=>(r.value?.tags||[]).filter(e=>e.toLowerCase()!==`blog`));return r.value||n.replace(`/paper`),(e,t)=>{let n=lr(`router-link`);return r.value?(W(),G(`div`,Mc,[q(n,{to:`/paper`,class:`back-link`},{default:Tn(()=>[...t[0]||=[Vi(`← 返回推文页面`,-1)]]),_:1}),K(`article`,null,[K(`h1`,null,A(r.value.title),1),K(`div`,Nc,[K(`time`,{datetime:r.value.date},A(Gt(jc)(r.value.date)),9,Pc),i.value.length?(W(),G(`span`,Fc,[(W(!0),G(H,null,pr(i.value,e=>(W(),G(`span`,{key:e,class:`tag`},A(e),1))),128))])):Ui(``,!0)]),K(`div`,{class:`post-content`,innerHTML:r.value.content},null,8,Ic)])])):Ui(``,!0)}}},[[`__scopeId`,`data-v-8cf3a22b`]]),Rc={class:`demo-page`},zc={class:`hero`},Bc={class:`screenshots-section`},Vc={class:`carousel`},Hc={class:`carousel-image`},Uc=[`src`,`alt`],Wc={class:`carousel-caption`},Gc={class:`carousel-thumbnails`},Kc=[`aria-label`,`onClick`],qc=[`src`,`alt`],Jc=co({__name:`Demo`,setup(e){let t=[{src:`/images/page1.png`,alt:`入场页`,caption:`主页展示`},{src:`/images/page2.png`,alt:`加载中`,caption:`过场界面`},{src:`/images/page3.png`,alt:`卡片交互`,caption:`探索交互`},{src:`/images/page4.png`,alt:`影响地图`,caption:`采集资源`}],n=Vt(0),r=()=>{n.value=(n.value+1)%t.length},i=()=>{n.value=(n.value-1+t.length)%t.length},a=e=>{n.value=e},o;return $n(()=>{o=setInterval(r,5e3)}),rr(()=>{clearInterval(o)}),(e,o)=>(W(),G(`div`,Rc,[K(`section`,zc,[o[1]||=K(`h1`,null,`《游城拓荒》模拟器`,-1),K(`section`,Bc,[o[0]||=K(`h2`,null,`游戏截图`,-1),K(`div`,Vc,[K(`div`,Hc,[K(`img`,{src:t[n.value].src,alt:t[n.value].alt},null,8,Uc),K(`button`,{class:`carousel-button prev`,type:`button`,"aria-label":`上一张截图`,onClick:i},` ❮ `),K(`button`,{class:`carousel-button next`,type:`button`,"aria-label":`下一张截图`,onClick:r},` ❯ `)]),K(`p`,Wc,A(t[n.value].caption),1),K(`div`,Gc,[(W(),G(H,null,pr(t,(e,t)=>K(`button`,{key:e.src,type:`button`,class:k([`thumbnail`,{active:n.value===t}]),"aria-label":`查看第 ${t+1} 张截图`,onClick:e=>a(t)},[K(`img`,{src:e.src,alt:e.alt},null,8,qc)],10,Kc)),64))])])]),o[2]||=Hi(`<div class="actions" data-v-812de7b5><a href="https://download.zhuanshiluobo.me/releases/v0.4.2-alpha.zip" class="primary" data-v-812de7b5> 下载 Windows Demo </a><a href="https://github.com/zhuanshiluobo/youchengtuohuang-frontier-simulator" target="_blank" rel="noopener noreferrer" data-v-812de7b5> 查看项目 </a></div><div class="version-info" data-v-812de7b5><div data-v-812de7b5><strong data-v-812de7b5>当前版本</strong><span data-v-812de7b5>v0.4.2-alpha</span></div><div data-v-812de7b5><strong data-v-812de7b5>支持平台</strong><span data-v-812de7b5>Windows 64 位</span></div><div data-v-812de7b5><strong data-v-812de7b5>开发者备注</strong><span data-v-812de7b5>联机功能可能存在bug，需要打开steam</span></div></div>`,2)]),o[3]||=Hi(`<section class="section" data-v-812de7b5><h2 data-v-812de7b5>试玩说明</h2><ul data-v-812de7b5><li data-v-812de7b5>点击按钮通过本站服务器下载 Demo，或前往 GitHub 查看项目。</li><li data-v-812de7b5>解压后运行游城拓荒模拟器.exe。</li><li data-v-812de7b5>目前尚未接入音效。</li></ul></section><section class="section" data-v-812de7b5><h2 data-v-812de7b5>当前进度</h2><ul data-v-812de7b5><li data-v-812de7b5>3D 模型接入、地图俯视角</li><li data-v-812de7b5>手牌动画调优</li><li data-v-812de7b5>收藏室与成就系统</li><li data-v-812de7b5>安装包由本站服务器提供下载，大小约 271 MB</li></ul></section>`,2)]))}},[[`__scopeId`,`data-v-812de7b5`]]),Yc={class:`paper-page`},Xc={key:0,class:`empty`},Zc={class:`post-meta`},Qc=[`datetime`],$c={key:0,class:`tags`},el={class:`post-summary`},tl=[{path:`/`,name:`home`,component:Oc},{path:`/post/:id`,name:`post`,component:Lc},{path:`/demo`,name:`demo`,component:Jc},{path:`/paper`,name:`paper`,component:co({__name:`Paper`,setup(e){let t=[...kc].sort((e,t)=>new Date(t.date)-new Date(e.date)),n=e=>(e.tags||[]).filter(e=>e.toLowerCase()!==`blog`);return(e,r)=>{let i=lr(`router-link`);return W(),G(`div`,Yc,[r[1]||=K(`h2`,{class:`page-title`},`文章列表`,-1),Gt(t).length===0?(W(),G(`div`,Xc,`暂无文章`)):Ui(``,!0),(W(!0),G(H,null,pr(Gt(t),e=>(W(),G(`article`,{key:e.id,class:`post-card`},[q(i,{to:`/post/${e.id}`,class:`post-title-link`},{default:Tn(()=>[K(`h3`,null,A(e.title),1)]),_:2},1032,[`to`]),K(`div`,Zc,[K(`time`,{datetime:e.date},A(Gt(jc)(e.date)),9,Qc),n(e).length?(W(),G(`span`,$c,[(W(!0),G(H,null,pr(n(e),e=>(W(),G(`span`,{key:e,class:`tag`},A(e),1))),128))])):Ui(``,!0)]),K(`p`,el,A(e.summary),1),q(i,{to:`/post/${e.id}`,class:`read-more`},{default:Tn(()=>[...r[0]||=[Vi(`阅读全文 →`,-1)]]),_:1},8,[`to`])]))),128))])}}},[[`__scopeId`,`data-v-92933fae`]])}],nl=Sc({history:Us(),routes:tl});ao(xo).use(nl).mount(`#app`);
