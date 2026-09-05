@@ -1,5 +1,6 @@
 ﻿import fs from 'node:fs/promises'
 import path from 'node:path'
+import { markdownToHtml as renderMarkdown } from './markdown-to-html.mjs'
 
 const postsFile = path.resolve('src/data/posts.js')
 const issueNumber = Number(process.env.ISSUE_NUMBER || 0)
@@ -43,7 +44,7 @@ const post = {
   title,
   date,
   summary,
-  content: markdownToHtml(content),
+  content: renderMarkdown(content),
   tags
 }
 
@@ -146,162 +147,6 @@ function normalizePublishedAt(value) {
   }
 
   return publishedAt.replace(/\.\d{3}(?=Z$|[+-]\d{2}:\d{2}$)/, '')
-}
-
-function markdownToHtml(markdown) {
-  const lines = markdown.replace(/\r\n/g, '\n').split('\n')
-  const html = []
-  let paragraph = []
-  let list = []
-  let code = []
-  let inCode = false
-
-  const flushParagraph = () => {
-    if (paragraph.length) {
-      html.push(`<p>${paragraph.join(' ')}</p>`)
-      paragraph = []
-    }
-  }
-
-  const flushList = () => {
-    if (list.length) {
-      html.push(`<ul>${list.map((item) => `<li>${inlineMarkdown(item)}</li>`).join('')}</ul>`)
-      list = []
-    }
-  }
-
-  for (const rawLine of lines) {
-    const line = rawLine.trimEnd()
-
-    const singleLineCode = /^(?:&emsp;\s*)?```(.*?)```$/.exec(line.trim())
-    if (!inCode && singleLineCode) {
-      flushParagraph()
-      flushList()
-      html.push(`<pre><code>${escapeHtml(singleLineCode[1])}</code></pre>`)
-      continue
-    }
-
-    if (line.startsWith('```')) {
-      if (inCode) {
-        html.push(`<pre><code>${escapeHtml(code.join('\n'))}</code></pre>`)
-        code = []
-        inCode = false
-      } else {
-        flushParagraph()
-        flushList()
-        inCode = true
-      }
-      continue
-    }
-
-    if (inCode) {
-      code.push(rawLine)
-      continue
-    }
-
-    if (!line.trim()) {
-      flushParagraph()
-      flushList()
-      continue
-    }
-
-    const image = githubImageToHtml(line)
-    if (image) {
-      flushParagraph()
-      flushList()
-      html.push(image)
-      continue
-    }
-
-    const heading = /^(#{1,3})\s+(.+)$/.exec(line)
-    if (heading) {
-      flushParagraph()
-      flushList()
-      const level = Math.max(2, heading[1].length)
-      html.push(`<h${level}>${inlineMarkdown(heading[2])}</h${level}>`)
-      continue
-    }
-
-    const listItem = /^[-*]\s+(.+)$/.exec(line)
-    if (listItem) {
-      flushParagraph()
-      list.push(listItem[1])
-      continue
-    }
-
-    paragraph.push(inlineMarkdown(line.trim()))
-  }
-
-  flushParagraph()
-  flushList()
-
-  if (inCode) {
-    html.push(`<pre><code>${escapeHtml(code.join('\n'))}</code></pre>`)
-  }
-
-  return html.join('\n')
-}
-
-function inlineMarkdown(text) {
-  return escapeHtml(text)
-    .replace(/&amp;(emsp|nbsp);/gi, '&$1;')
-    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
-    .replace(/~~(.+?)~~/g, '<s>$1</s>')
-    .replace(/(^|[^*])\*([^*]+)\*(?!\*)/g, '$1<em>$2</em>')
-    .replace(/`([^`]+)`/g, '<code>$1</code>')
-}
-
-function githubImageToHtml(line) {
-  const trimmed = line.trim()
-  const htmlImage = /^<img\b([^>]*)\/?\s*>$/i.exec(trimmed)
-
-  if (htmlImage) {
-    const src = readHtmlAttribute(htmlImage[1], 'src')
-    const alt = readHtmlAttribute(htmlImage[1], 'alt') || ''
-    return safeGitHubImage(src, alt)
-  }
-
-  const markdownImage = /^!\[([^\]]*)\]\((\S+?)(?:\s+["'][^"']*["'])?\)$/.exec(trimmed)
-  if (markdownImage) {
-    return safeGitHubImage(markdownImage[2], markdownImage[1])
-  }
-
-  return ''
-}
-
-function readHtmlAttribute(attributes, name) {
-  const pattern = new RegExp(`\\b${name}\\s*=\\s*(?:"([^"]*)"|'([^']*)')`, 'i')
-  const match = pattern.exec(attributes)
-  return match ? (match[1] ?? match[2] ?? '') : ''
-}
-
-function safeGitHubImage(src, alt) {
-  if (!src) {
-    return ''
-  }
-
-  try {
-    const url = new URL(src)
-    const isCurrentAttachment = url.hostname === 'github.com'
-      && /^\/user-attachments\/assets\/[0-9a-f-]+$/i.test(url.pathname)
-    const isLegacyAttachment = url.hostname === 'user-images.githubusercontent.com'
-
-    if (url.protocol !== 'https:' || (!isCurrentAttachment && !isLegacyAttachment)) {
-      return ''
-    }
-
-    return `<img src="${escapeHtml(url.href)}" alt="${escapeHtml(alt)}" loading="lazy">`
-  } catch {
-    return ''
-  }
-}
-
-function escapeHtml(value) {
-  return String(value)
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;')
 }
 
 function formatValue(value, indent = 0) {

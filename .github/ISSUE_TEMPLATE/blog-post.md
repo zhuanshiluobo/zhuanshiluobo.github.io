@@ -16,6 +16,9 @@ Supported Markdown:
 - Paragraphs
 - `inline code`
 - **bold text**
-- `##` and `###` headings
-- Bullet lists
+- `#` through `######` headings
+- Bullet and numbered lists
+- Links and images
+- Blockquotes and horizontal rules
+- Tables and strikethrough
 - Fenced code blocks

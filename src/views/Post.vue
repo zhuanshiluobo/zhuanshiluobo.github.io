@@ -86,19 +86,24 @@ h1 {
   font-size: 1.05rem;
 }
 
-.post-content :deep(h2) {
-  font-size: 1.3rem;
-  font-weight: 700;
+.post-content :deep(h1),
+.post-content :deep(h2),
+.post-content :deep(h3),
+.post-content :deep(h4),
+.post-content :deep(h5),
+.post-content :deep(h6) {
   margin: 1.8rem 0 0.8rem;
   color: var(--color-heading);
+  line-height: 1.4;
+  font-weight: 700;
 }
 
-.post-content :deep(h3) {
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin: 1.5rem 0 0.6rem;
-  color: var(--color-heading);
-}
+.post-content :deep(h1) { font-size: 1.55rem; }
+.post-content :deep(h2) { font-size: 1.35rem; }
+.post-content :deep(h3) { font-size: 1.2rem; }
+.post-content :deep(h4) { font-size: 1.1rem; }
+.post-content :deep(h5) { font-size: 1rem; }
+.post-content :deep(h6) { font-size: 0.95rem; }
 
 .post-content :deep(strong) {
   font-weight: 700;
@@ -124,6 +129,50 @@ h1 {
 
 .post-content :deep(li) {
   margin-bottom: 0.3rem;
+}
+
+.post-content :deep(blockquote) {
+  margin: 0 0 1rem;
+  padding: 0.2rem 1rem;
+  border-left: 4px solid hsla(160, 100%, 37%, 0.6);
+  color: var(--color-text);
+  opacity: 0.85;
+}
+
+.post-content :deep(blockquote p:last-child) {
+  margin-bottom: 0;
+}
+
+.post-content :deep(hr) {
+  margin: 1.8rem 0;
+  border: 0;
+  border-top: 1px solid var(--color-border);
+}
+
+.post-content :deep(table) {
+  width: 100%;
+  margin-bottom: 1rem;
+  border-collapse: collapse;
+  display: block;
+  overflow-x: auto;
+}
+
+.post-content :deep(th),
+.post-content :deep(td) {
+  padding: 0.55rem 0.75rem;
+  border: 1px solid var(--color-border);
+  text-align: left;
+}
+
+.post-content :deep(th) {
+  background: var(--color-background-soft);
+  font-weight: 700;
+}
+
+.post-content :deep(a) {
+  overflow-wrap: anywhere;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
 }
 
 .post-content :deep(pre) {
