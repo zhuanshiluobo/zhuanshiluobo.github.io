@@ -87,9 +87,20 @@ onUnmounted(() => {
       </section>
 
       <div class="actions">
-        <a href="https://download.zhuanshiluobo.me/releases/v0.4.2-alpha.zip" class="primary">
-          Windows下载
-        </a>
+        <div class="download-actions">
+          <a href="https://download.zhuanshiluobo.me/releases/v0.4.2-beta.zip" class="primary">
+            最新版下载
+          </a>
+
+          <details class="version-history">
+            <summary>过往版本</summary>
+            <div class="version-history-menu">
+              <a href="https://download.zhuanshiluobo.me/releases/v0.4.2-alpha.zip">
+                v0.4.2-alpha
+              </a>
+            </div>
+          </details>
+        </div>
 
         <a href="https://github.com/zhuanshiluobo/youchengtuohuang-frontier-simulator" target="_blank"
           rel="noopener noreferrer">
@@ -100,7 +111,7 @@ onUnmounted(() => {
       <div class="version-info">
         <div>
           <strong>当前版本</strong>
-          <span>v0.4.2-alpha</span>
+          <span>v0.4.2-beta</span>
         </div>
         <div>
           <strong>支持平台</strong>
@@ -162,6 +173,7 @@ onUnmounted(() => {
 
 .actions {
   display: flex;
+  align-items: flex-start;
   gap: 1rem;
   margin-top: 1.5rem;
 }
@@ -189,6 +201,53 @@ onUnmounted(() => {
 .actions .primary:hover {
   opacity: 0.85;
   color: white;
+}
+
+.download-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.version-history {
+  position: relative;
+  margin-top: 0.4rem;
+  font-size: 0.78rem;
+}
+
+.version-history summary {
+  color: var(--color-text);
+  cursor: pointer;
+  opacity: 0.65;
+}
+
+.version-history summary:hover {
+  color: hsla(160, 100%, 37%, 1);
+  opacity: 1;
+}
+
+.version-history-menu {
+  position: absolute;
+  z-index: 2;
+  top: calc(100% + 0.35rem);
+  left: 0;
+  min-width: 9rem;
+  padding: 0.35rem;
+  border: 1px solid var(--color-border);
+  background: var(--color-background);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.actions .version-history-menu a {
+  display: block;
+  padding: 0.4rem 0.55rem;
+  border: 0;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.actions .version-history-menu a:hover {
+  background: rgba(127, 127, 127, 0.1);
 }
 
 .version-info {
