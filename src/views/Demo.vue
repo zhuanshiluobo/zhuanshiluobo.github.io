@@ -56,7 +56,6 @@ onUnmounted(() => {
   <div class="demo-page">
     <section class="hero">
       <h1>《游城拓荒》模拟器</h1>
-
       <section class="screenshots-section">
         <h2>游戏截图</h2>
 
@@ -89,12 +88,12 @@ onUnmounted(() => {
 
       <div class="actions">
         <a href="https://download.zhuanshiluobo.me/releases/v0.4.2-alpha.zip" class="primary">
-          下载 Windows Demo
+          Windows下载
         </a>
 
         <a href="https://github.com/zhuanshiluobo/youchengtuohuang-frontier-simulator" target="_blank"
           rel="noopener noreferrer">
-          查看项目
+          前往github
         </a>
       </div>
 
@@ -108,27 +107,39 @@ onUnmounted(() => {
           <span>Windows 64 位</span>
         </div>
         <div>
+          <strong>文件大小</strong>
+          <span>约280MB</span>
+        </div>
+        <div>
           <strong>开发者备注</strong>
-          <span>联机功能可能存在bug，需要打开steam</span>
+          <span>联机功能需要打开steam</span>
         </div>
       </div>
     </section>
-
     <section class="section">
       <h2>试玩说明</h2>
       <ul>
-        <li>点击按钮通过本站服务器下载 Demo，或前往 GitHub 查看项目。</li>
+        <li>点击按钮通过本站服务器下载 Demo，或前往 GitHub 查看项目最新更新。</li>
         <li>解压后运行游城拓荒模拟器.exe。</li>
         <li>目前尚未接入音效。</li>
+        <li>本模拟器为个人开发，参考线下桌游《游城拓荒：铸基者》开发。</li>
       </ul>
     </section>
     <section class="section">
       <h2>当前进度</h2>
       <ul>
-        <li>3D 模型接入、地图俯视角</li>
-        <li>手牌动画调优</li>
-        <li>收藏室与成就系统</li>
-        <li>安装包由本站服务器提供下载，大小约 271 MB</li>
+        <li>首次上线收集反馈中...</li>
+        <li>修复联机问题和恶性bug。</li>
+        <li>接入3D 模型，完善成就及新手指引。</li>
+        <li>更新本地四人玩法模拟。</li>
+        <li>修改地图为支持斜视与俯视。</li>
+      </ul>
+    </section>
+    <section class="section">
+      <h2>bug提交</h2>
+      <ul>
+        <li>点击底部前往GitHub ↓</li>
+        <li>点击底部前往b站demo评论区 ↓</li>
       </ul>
     </section>
   </div>
@@ -142,7 +153,7 @@ onUnmounted(() => {
 }
 
 .hero {
-  padding: 3rem 0;
+  padding: 0rem 0;
 }
 
 .status {
@@ -336,3 +347,4 @@ onUnmounted(() => {
   }
 }
 </style>
+

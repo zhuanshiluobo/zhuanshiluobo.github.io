@@ -10,8 +10,9 @@
       </router-link>
       <nav class="nav-links">
         <router-link to="/">首页</router-link>
-        <router-link to="/paper">推文页面</router-link>
-        <router-link to="/demo">Demo展示</router-link>
+        <router-link to="/paper">推文</router-link>
+        <router-link to="/demo">Demo</router-link>
+        <router-link to="/files">文库</router-link>
       </nav>
     </div>
   </header>

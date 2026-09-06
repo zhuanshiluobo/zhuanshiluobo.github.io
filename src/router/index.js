@@ -3,12 +3,14 @@ import Home from '../views/Home.vue'
 import Post from '../views/Post.vue'
 import Demo from '../views/Demo.vue'
 import Paper from '../views/Paper.vue'
+import Files from '../views/Files.vue'
 
 const routes = [
   { path: '/', name: 'home', component: Home },
   { path: '/post/:id', name: 'post', component: Post },
   { path: '/demo', name: 'demo', component: Demo },
-  { path: '/paper', name: 'paper', component: Paper }
+  { path: '/paper', name: 'paper', component: Paper },
+  { path: '/files', name: 'files', component: Files }
 ]
 
 const router = createRouter({
