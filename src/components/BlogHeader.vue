@@ -26,7 +26,6 @@
 
 .header-inner {
   max-width: 1000px;
-  min-width: 500px;
   margin: 0 auto;
   padding: 0 1rem;
   display: flex;
