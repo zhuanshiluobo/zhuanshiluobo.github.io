@@ -291,12 +291,10 @@ onUnmounted(() => {
 
 @media (max-width: 600px) {
   .actions {
-    flex-direction: column;
     align-items: flex-start;
   }
 
   .version-info {
-    flex-direction: column;
     gap: 1rem;
   }
 }
@@ -402,8 +400,9 @@ onUnmounted(() => {
 
 @media (max-width: 600px) {
   .carousel-thumbnails {
-    grid-template-columns: repeat(2, 1fr);
+    margin-top: 0.5rem;
   }
 }
+
 </style>
 
