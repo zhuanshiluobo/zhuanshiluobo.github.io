@@ -34,30 +34,6 @@ export const posts = [
     tags: ["Blog"]
   },
   {
-    id: 5,
-    title: "守望先锋：占点分析",
-    date: "2026-08-21T15:09:29+08:00",
-    summary: "守望先锋占点分析，提供完整 Word 文档下载。",
-    content: "\n      <p>本文的完整内容整理在 Word 文档中，可通过下方按钮下载原始文件。</p>\n      <div class=\"download-card\">\n        <strong>守望先锋-占点分析.docx</strong>\n        <span>Word 文档 · 约 177 KB</span>\n        <a\n          class=\"download-link\"\n          href=\"/downloads/overwatch-point-capture-analysis.docx\"\n          download=\"守望先锋-占点分析.docx\"\n        >下载完整文档</a>\n      </div>\n    ",
-    tags: ["守望先锋", "游戏分析"]
-  },
-  {
-    id: 6,
-    title: "《游城拓荒：铸基者》v0.4.0-alpha 版本更新策划案",
-    date: "2026-08-21T15:25:31+08:00",
-    summary: "围绕 3D 棋盘与地图导航、底部角色手牌、资源计数板和对局界面布局展开的 v0.4.0-alpha 发布策划。",
-    content: "\n      <p>本文整理《游城拓荒：铸基者》v0.4.0-alpha 版本更新策划案。该版本以“更好观察、更快确认、更少打断”为体验方向，不新增基础规则。</p>\n      <p><strong>前置版本：</strong>v0.3.0-alpha<br>\n      <strong>版本状态：</strong>待合并开发内容的发布策划<br>\n      <strong>策划范围：</strong>3D 棋盘与地图导航、底部角色手牌、资源计数板、设置与显示、对局界面布局优化<br>\n      <strong>文档日期：</strong>2026 年 8 月 20 日</p>\n\n      <div class=\"download-card\">\n        <strong>0.4.0-alpha更新策划案.docx</strong>\n        <span>原始 Word 文档 · 约 31 KB</span>\n        <a\n          class=\"download-link\"\n          href=\"/downloads/you-cheng-tuo-huang-v0.4.0-alpha-plan.docx\"\n          download=\"0.4.0-alpha更新策划案.docx\"\n        >下载完整文档</a>\n      </div>\n    ",
-    tags: ["游城拓荒", "游戏开发", "版本策划"]
-  },
-  {
-    id: 7,
-    title: "守望先锋系统拆解案",
-    date: "2026-08-25T17:59:57+08:00",
-    summary: "拆解《守望先锋》的系统框架、目标玩法与竞技规则，并评析英雄协作、成长商业化及整体体验的优缺点。",
-    content: "\n      <p>本次系统拆解整理为 Excel 分析文档与 XMind 系统框架图，两份原始文件可在下方完整下载。</p>\n      <div class=\"download-card\">\n        <strong>守望先锋系统拆解案.xlsx</strong>\n        <span>原始 Excel 文档 · 约 1.95 MB</span>\n        <a\n          class=\"download-link\"\n          href=\"/downloads/overwatch-system-breakdown.xlsx\"\n          download=\"守望先锋系统拆解案.xlsx\"\n        >下载完整文档</a>\n      </div>\n      <div class=\"download-card\">\n        <strong>守望先锋系统框架.xmind</strong>\n        <span>原始 XMind 文档 · 约 320 KB</span>\n        <a\n          class=\"download-link\"\n          href=\"/downloads/overwatch-system-framework.xmind\"\n          download=\"守望先锋系统框架.xmind\"\n        >下载完整文档</a>\n      </div>\n    ",
-    tags: ["守望先锋", "游戏分析"]
-  },
-  {
     id: 8,
     title: "关于模型",
     date: "2026-08-29T23:38:35+08:00",
@@ -104,14 +80,6 @@ export const posts = [
     summary: "也不知道哪里的问题，现在通过issues发布的md格式文档的时候转换器又坏了，现在md格式完全检测不出来，纯是字符串。",
     content: "<h1>关于博客</h1>\n<h2>新bug</h2>\n<p> 也不知道哪里的问题，现在通过issues发布的md格式文档的时候转换器又坏了，现在md格式完全检测不出来，纯是字符串。</p>\n<p> 66还有新bug，现在默认是从下到上日期越来越新，但是同一天发布的却反过来了，变成同一天新发布的在下面。找了半天还以为这个部署又出新bug了，修一下才发现原来是排序问题。</p>\n<p> <strong>搞半天不还是得修。不过这个以后再说，目前不咋影响使用。</strong></p>\n<h2>新机制</h2>\n<p> 研究了三个小时的宝塔面板，跑到ssh里改的数据表才把master分支加上去，图形化界面虽然方便但出了问题也是真难改。</p>\n<p> 最后解决方案其实就是在宝塔页面的网站目录里<strong>把网站目录设置为git仓库地址，运行目录设置为网页构建</strong>的/docs文件夹，这样就能在正常使用nginx的npm run构建了。</p>\n<p><img src=\"https://github.com/user-attachments/assets/9152856e-5196-4c56-9cb9-c2b2af4ac005\" alt=\"Image\" loading=\"lazy\"></p>\n<p> 对了，不要忘记把防跨站功能关闭，这个在宝塔面板上修改目录的时候会自动给你打开，后续修改的时候会报错。<s>我不懂我瞎说的我感觉这玩意没用</s></p>\n<p><img src=\"https://github.com/user-attachments/assets/1b3a1858-56c1-4a0a-ba0b-2e81c5372c5c\" alt=\"Image\" loading=\"lazy\"></p>\n<h1>demo开发</h1>\n<h2>WebGL</h2>\n<p> 今天想制作一个能在vue博客页面直接玩的demo，结果搞了半天WebGL的调试，发现没有了ai报错如山，没办法只能继续丢给ai生成了，目前的原因是WebGL与steam服务冲突，也就是<strong><a href=\"http://Steamworks.NET\" target=\"_blank\" rel=\"noopener noreferrer\">Steamworks.NET</a> 不提供 WebGL 所需的 Steamworks 类型</strong>，要么注释掉<s>试过了要改的文件太多而且嵌套引用带来的问题多的要死</s>，要么重写个分支单独做。（这个目前在考虑做一下试试顺便练下怎么用steam desktop管理分支）</p>\n<p> 期待后续开发吧，这一块要改的不少。<em>或者可以直接拿牢版本单机用？</em></p>\n<h2>手卡</h2>\n<p> 依旧手卡，依旧看不见就是做好了。打死我也想不到让手牌放置到待选区确认的方式是把手牌区的对应卡变成透明的这种解决方案，五张扇形手牌中间空一格说是。</p>\n<p><img src=\"https://github.com/user-attachments/assets/ddc3561e-dc9a-49f2-aeb1-f88b6a9cb0ea\" alt=\"Image\" loading=\"lazy\"></p>\n<h3>优化</h3>\n<p> 更新拖动松手轨迹；更新收藏室让描述更加拟人；做了一个新的过场动画让不怎么需要加载的页面快速加载。<s>今天依旧没开始做多人适配。</s></p>\n<h1>新坑</h1>\n<p> <s>我有一个绝妙的点子，可惜这里空间太小写不下。</s></p>\n<p> wait 这里我想写多少写多少，哈哈。</p>\n<p> 我觉得堆叠大陆是个好玩的模式，正在思考和胡闹厨房like（类似多人联机派对）、模拟经营的结合体，感觉会很好玩，还适合搞成增量、挂机玩法和肉鸽玩法，不过一切等找到工作再说。</p>\n<p> 今天把手上的系统拆解案结了，明天写新的策划案试试，感觉现在这个没什么竞争力，而且写的也不多。</p>",
     tags: ["游城拓荒", "博客"]
-  },
-  {
-    id: 13,
-    title: "游城拓荒策划案：行动面板系统",
-    date: "2026-09-01",
-    summary: "梳理《游城拓荒》行动面板的设计目标、界面分区、按钮状态与弹窗逻辑，并细化角色牌、部署、调度、探索和城市移动等交互规则。",
-    content: "\n      <p>本策划案围绕《游城拓荒》的行动面板系统，整理系统设计目的、界面与场景说明，以及快速行动、主要行动、按钮状态和弹窗交互规则。</p>\n      <div class=\"download-card\">\n        <strong>游城拓荒策划案-行动面板系统.xlsx</strong>\n        <span>原始 Excel 文档 · 约 3.40 MB</span>\n        <a\n          class=\"download-link\"\n          href=\"/downloads/you-cheng-tuo-huang-action-panel-system.xlsx\"\n          download=\"游城拓荒策划案-行动面板系统.xlsx\"\n        >下载完整文档</a>\n      </div>\n    ",
-    tags: ["游城拓荒", "游戏开发"]
   },
   {
     id: 14,
