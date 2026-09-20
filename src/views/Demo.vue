@@ -88,13 +88,16 @@ onUnmounted(() => {
 
       <div class="actions">
         <div class="download-actions">
-          <a href="https://download.zhuanshiluobo.me/releases/v0.4.2-beta.zip" class="primary">
+          <a href="https://download.zhuanshiluobo.me/releases/v0.4.3-alpha.zip" class="primary">
             最新版下载
           </a>
 
           <details class="version-history">
             <summary>过往版本</summary>
             <div class="version-history-menu">
+              <a href="https://download.zhuanshiluobo.me/releases/v0.4.2-beta.zip">
+                v0.4.2-beta
+              </a>
               <a href="https://download.zhuanshiluobo.me/releases/v0.4.2-alpha.zip">
                 v0.4.2-alpha
               </a>
@@ -111,7 +114,7 @@ onUnmounted(() => {
       <div class="version-info">
         <div>
           <strong>当前版本</strong>
-          <span>v0.4.2-beta</span>
+          <span>v0.4.3-alpha</span>
         </div>
         <div>
           <strong>支持平台</strong>
@@ -137,23 +140,22 @@ onUnmounted(() => {
       </ul>
     </section>
     <section class="section">
-      <h2>当前进度</h2>
+      <h2>最新记录日：9.20</h2>
       <ul>
-        <li>首次上线收集反馈中...</li>
-        <li>已根据官方文档统一描述和命名规范。</li>
-        <li>现在联机结束后支持查看得分了。</li>
-        <li>添加了断开连接按钮。</li>
+       <li>+ 三人地图导入和所有地点适配。</li>
+       <li>+ 单机模式支持选择玩家操控城市数量。</li>
+       <li>+ 修复多个雷蛇结算时的卡顿问题。</li>
+       <li>+ 修复入场阶段地块引导异常显示。</li>
+       <li>+ 制作部分主页UI。</li>
       </ul>
     </section>
     <section class="section">
       <h2>下一步计划</h2>
       <ul>
-        <li>修复联机问题和恶性bug。</li>
-        <li>为实现dlc卡牌和自定义效果，正在筹备重构整套命令系统。</li>
-        <li>开发三人、双人联机玩法，并在入口时提示规则变更。</li>
+        <li>+ 设计存档功能文档，准备开发单机模式下存档和读取功能。</li>
+        <li>+ 准备开发lua效果树与回合主链。</li>
         <li>修改地图为支持斜视与俯视。完善成就及新手指引。</li>
         <li>开发键盘移动、地图将支持俯视与斜视的切换。</li>
-        <li>更新本地操作四人玩法模拟。</li>
       </ul>
     </section>
     <section class="section">
