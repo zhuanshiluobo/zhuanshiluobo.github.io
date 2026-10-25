@@ -13,6 +13,7 @@
         <router-link to="/paper">推文</router-link>
         <router-link to="/demo">Demo</router-link>
         <router-link to="/files">文库</router-link>
+        <a href="https://zhuanshiluobo.me/manage/">管理</a>
       </nav>
     </div>
   </header>
