@@ -21,6 +21,11 @@ concurrency:
 
 jobs:
   import:
+    if: >-
+      github.actor == 'zhuanshiluobo' &&
+      github.triggering_actor == 'zhuanshiluobo' &&
+      (github.event_name == 'workflow_dispatch' ||
+       github.event.issue.user.login == 'zhuanshiluobo')
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -52,6 +57,10 @@ jobs:
               repo: context.repo.repo,
               issue_number
             })
+            if (context.actor !== 'zhuanshiluobo' || issue.user?.login !== 'zhuanshiluobo') {
+              core.setFailed('Only zhuanshiluobo can publish issues authored by zhuanshiluobo.')
+              return
+            }
             core.setOutput('number', issue.number)
             core.setOutput('title', issue.title)
             core.setOutput('body', issue.body || '')
